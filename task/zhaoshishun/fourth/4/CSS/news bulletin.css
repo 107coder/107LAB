@@ -1,0 +1,53 @@
+.main{
+	width:950px;
+	height:500px;
+	margin:0 auto;
+	margin-top:40px;
+}
+.main-hr{
+	width:950px;
+	height:5px;
+	margin:0 auto;
+	background-color:rgba(60,147,237,0.9);
+	margin-top:10px;
+}
+.main-content{
+	height:440px;
+	width:950px;
+	
+}
+.content-img img{
+	width:270px;
+	height:440px;
+	float:left;
+}
+.main-right{
+	width:600px;
+	height:450px;
+	float:right;
+	margin-right:50px;
+}
+.list{
+	margin-top:15px;
+}
+.list ul li{
+	list-style:none;
+	margin-top:24px;
+}
+
+.list ul li img{
+	width:16px;
+	height:16px;
+}
+.button{
+	position:relative;
+	left:350px;
+	top:50px;
+}
+.button input{
+	width:50px;
+	height:20px;
+}
+.button button{
+	height:25px;
+}
