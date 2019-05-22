@@ -1,0 +1,292 @@
+html {
+  background-color: #373d41;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+  background-color: #1f2326;
+  margin: 0 auto;
+}
+.nav {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #5f6264;
+  background-color: #1f2326;
+}
+.logo {
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.search-bar {
+  position: absolute;
+  top: 0;
+  border: 1px;
+  right: 450px;
+  width: 200px;
+  height: 50px;
+  background-color: #454b50;
+}
+.search-bar-input {
+  height: 48px;
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  background-color: #454b50;
+}
+.search-pic {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+.nav-right {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  padding-top: 7px;
+}
+.nav-right-li {
+  margin: 8px;
+  font-size: 15px;
+  color: #fff;
+}
+.gwc {
+  position: absolute;
+  right: 323px;
+  top: 6px;
+  width: 23px;
+  height: 18px;
+}
+.main {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background-color: #1f2326;
+}
+.bg-pic {
+  position: absolute;
+  left: 50%;
+  margin-left: -625px;
+  width: 1360px;
+  height: 780px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  top: 648px;
+  bottom: 0;
+  background-color: #373d41;
+}
+.sidebar {
+  position: fixed;
+  right: 15px;
+  bottom: 20%;
+  width: 30px;
+  height: 110px;
+  padding: 15px 7px;
+  background-color: #00c1de;
+}
+.sidebar-zizhu {
+  width: 30px;
+  height: 20px;
+}
+.sidebar-wenzi {
+  position: relative;
+  left: 7px;
+  width: 5px;
+  line-height: 19px;
+  color: #fff;
+}
+.content {
+  position: absolute;
+  left: 50%;
+  top: 125px;
+  margin-left: -420px;
+  width: 900px;
+  height: 400px;
+}
+.main-advertisement {
+  position: relative;
+  top: 50px;
+  left: 0;
+  width: 350px;
+  height: 250px;
+}
+.main-form {
+  position: relative;
+  top: -260px;
+  right: -510px;
+  width: 305px;
+  height: 300px;
+  padding: 30px;
+  background-color: #fff;
+}
+.ad-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #fff;
+}
+.ad-li {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+}
+.mimadenglu {
+  font-size: 18px;
+}
+.username {
+  position: relative;
+  top: 30px;
+  width: 308px;
+  height: 35px;
+}
+.password {
+  position: relative;
+  top: 47px;
+  width: 308px;
+  height: 35px;
+}
+.enter {
+  position: relative;
+  top: 66px;
+  border: none;
+  width: 310px;
+  height: 35px;
+  color: #fff;
+  background-color: #00c1de;
+  cursor: pointer;
+}
+.help {
+  position: relative;
+  top: 70px;
+  left: 110px;
+}
+.help-li {
+  margin: 5px;
+  font-size: 13px;
+  color: #9b9ea0;
+}
+
+.footer-siteinfoLegal {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 45px;
+}
+.footer-siteinfoLegal-li {
+  margin: 15px;
+  font-size: 17px;
+  color: #9b9ea0;
+}
+.footer-products {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -597px;
+  width: 1202px;
+  height: 70px;
+}
+.footer-products-li {
+  margin: 8px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #9b9ea0;
+}
+.footer-copyright {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  margin-left: -590px;
+  width: 1200px;
+  height: 30px;
+  font-size: 13px;
+  color: #9b9ea0;
+}
+.footer-address {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  margin-left: -590px;
+  width: 1200px;
+  height: 20px;
+  padding-left: 40px;
+  font-size: 13px;
+  color: #9b9ea0;
+}
+.badge1 {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+.badge2 {
+  position: absolute;
+  top: -4px;
+  left: 19px;
+  width: 19px;
+  height: 20px;
+}
+.hidden {
+  position: fixed;
+  opacity: 0;
+  -webkit-filter: alpha(opacity= 0);
+  bottom: 20%;
+  right: 70px;
+  width: 280px;
+  height: 200px;
+  padding-top: 15px;
+  background-color: #fff;
+}
+.hidden-li {
+  width: 220px;
+  height: 65px;
+  padding-left: 60px;
+}
+.hidden-li-img1 {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+}
+.hidden-li-img2 {
+  position: absolute;
+  top: 76px;
+}
+.hidden-li-img3 {
+  position: absolute;
+  left: 10px;
+  top: 147px;
+}
+.hidden-li-h {
+  font-size: 14px;
+  line-height: 30px;
+  color: #373d41;
+}
+.hidden-li-p-orange {
+  position: relative;
+  top: -5px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ff8a00;
+}
+.hidden-li-p {
+  font-size: 12px;
+  color: #9b9ea0;
+}
+.close {
+  position: relative;
+  top: -200px;
+  right: -240px;
+  cursor: pointer;
+}
