@@ -1,0 +1,74 @@
+
+.back{
+        position: relative;
+    }
+.back img{
+    width:100%;
+    height:750px;
+    
+    }
+
+
+.main{
+    position: absolute;
+    top:44%;
+    left:65%;
+    width:450px;
+    height:350px;
+    margin: auto;
+    margin-bottom: 50px;
+  
+}
+.username{
+     font-size: 17px;
+}
+.username input{
+    width:280px;
+    height:30px;
+    margin-top: 1px;
+
+}
+.password,.captcha{
+    font-size: 17px;
+    margin-top: 15px;
+
+}
+.captcha img{
+    position: relative;
+    top:12px;
+    left:13px;
+}
+.captcha input{
+    width:135px;
+    height:32px;
+    margin-top: 1px;
+     border-radius: 1px;
+}
+.password input{
+    width:280px;
+    height:30px;
+    margin-top: 1px;
+}
+.sub{
+    margin-top: 36px;
+    width:100px;
+    
+}
+.sub input{
+    width:300px;
+    height:35px;
+    font-size: 18px;
+    letter-spacing: 7px;
+    background-color:rgba(57,164,219,0.7);
+    
+}
+.main a{
+    color:#fff;
+    font-size: 18px;
+    margin-left: 130px;
+    position: relative;
+    top:15px;
+}
+.main a:hover{
+    color:red;
+}

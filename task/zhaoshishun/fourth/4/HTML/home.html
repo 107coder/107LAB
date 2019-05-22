@@ -1,0 +1,228 @@
+<?php
+    require("../../data/config.inc.php");
+    $conn = @mysqli_connect(HOST,USER,PASS) or die("数据库连接失败！");
+    $select = mysqli_select_db($conn,DBNAME);       //选择数据库
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>home</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script src="../JS/home.js"></script>
+	<script src="../JS/public.js"></script>
+	<link rel="stylesheet" href="../CSS/home.css">
+	<link rel="stylesheet" href="../CSS/public.css">
+	
+</head>
+<body>
+	<div class="page">
+		<div class="float"><img src="../images/favicon.ico"></img></div>
+		<!--头部-->
+		<?php require_once '../../menu.php'; ?>
+		<div class="header-2">
+			<img src="../images/ICON.png"></img>
+		</div>
+		<div class="header-3">
+			<div class="nav">
+				<ul>
+					<li><a href="./home.html">首页</a>
+					</li>
+					<li><a href="#">关于我们</a>
+						<ul class="nav2">
+							<li><a href="introduce.html">中心简介</a></li>
+							<li>服务内容</li>
+							<li>师资队伍</li>
+						</ul>
+					</li>
+					<li><a href="#">新闻公告</a>
+						 <ul class="nav2">
+							<li><a href="#">中心动态</a></li>
+							<li><a href="#">学院风采</a></li>
+							<li><a href="#">朋辈成长</a></li>
+							<li><a href="#">教师园地</a></li>
+						</ul>
+					</li>
+					<li><a href="#">心理百科</a>
+						<ul class="nav2">
+							<li><a href="#">心理常识</a></li>
+							<li><a href="#">最新发现</a></li>
+						</ul>
+					</li>
+					<li><a href="#">心理保健</a>
+						<ul class="nav2">
+							<li><a href="#">情感美文</a></li>
+							<li><a href="#">开心一刻</a></li>
+						</ul>
+					</li>
+					<li><a href="#">心理咨询</a>
+						<ul class="nav2">
+							<li><a href="#">咨询常识</a></li>
+							<li><a href="#">药品指南</a></li>
+						</ul> 
+					</li>
+					<li><a href="#">心理测评</a>
+						<ul class="nav2">
+							<li><a href="#">心灵普查</a></li>
+							<li><a href="#">趣味检测</a></li>
+							<li><a href="#">专业问卷</a></li>
+						</ul>
+					</li>
+					<li><a href="#">专题活动</a></li>
+					<li><a href="./download.html">下载中心</a></li>
+					<li><a href="./leave message.html">我要留言</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-4">
+			<div class="image-1">
+				<img src="../images/image1.jpg"></img>
+				<img src="../images/image2.jpg"></img>
+				<img src="../images/image3.jpg"></img>
+				<img src="../images/image4.jpg"></img>
+				<img src="../images/image1.jpg"></img>
+				
+			</div>
+			<div class="header-points">
+				<ul>
+					<li class="dot"><img src="../images/image_dot.png"></img></li>
+					<li class="dot"><img src="../images/image_dot.png"></img></li>
+					<li class="dot"><img src="../images/image_dot.png"></img></li>
+					<li class="dot"><img src="../images/image_dot.png"></img></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--中间-->
+		<div class="main">
+			<!--上面的-->
+			<div class="main1">
+				<div class="hr"></div>
+				<!--左边的图和右边的字-->
+				<div class="main1-1">
+					<!--左边的图-->
+					<div class="main1-1-1">
+						<div class="image">
+							<ul>
+								<li><img src="../images/news_image1.jpg"></img></li>
+								<li><img src="../images/news_image2.jpg"></img></li>
+							</ul>
+						</div>
+						<div class="num">
+							<div class="number-1 number">1</div>
+							<div class="number-2 number">2</div>
+						</div>
+					</div>
+					<!--右边的字-->
+					<div class="main1-1-2">
+						<div class="up-1"><a href="./news bulletin.html" class="blue">新闻公告</a></div>
+						<div class="up-2"></div>
+						<div class="up-3">
+
+							<ul>							
+					<!--新闻公告-->
+								<?php 
+									$sql="select title from news order by ifTop desc,time";
+                                	mysqli_query($conn,'SET NAMES UTF8');
+                                	$result= mysqli_query($conn,$sql);
+                            		$number=0;
+                                	while($row=mysqli_fetch_array($result)){
+										
+	                                	echo '<li><img src="../images/list_icon.png"></img><a href="./news bulletin text.html" class="blue">';
+	                                	echo "{$row['title']}</a></li>";
+	                                	$number++;
+	                                	if($number>7){
+	                                		break;
+	                                	}
+                                	
+                            		}
+								?>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--下面的-->
+			<div class="main2">
+				<div class="down-1">
+					<span class="blue">中心简介</span>
+					<div class="down-1-hr"></div>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;计算机与信息工程学院心理健康教育工作站始建于2015年3月，在学院101办公室，占地面积50平方米。工作站领导小组由学院党委副书记、各年级辅导员、年级朋辈辅导员组成。工作站宗旨以增强学生的心理素质为目的，以普及心理健康知识...
+						<a href="./introduce.html" style="color:rgb(57,164,219)">详细</a></p>
+				</div>
+				<div class="down-2">
+					<div class="down-2-1">
+						<ul>
+							<li><span>心理百科</span></li>
+							<li><span>心理保健</span></li>
+							<li><span>心理咨询</span></li>
+						</ul>
+					</div>
+					<div class="down-2-hr"></div>
+					<div class="down-2-2">
+						<ul class="down-2-2-1">
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">春季常见十种异常心理</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">一张图分清抑郁症和抑郁情绪</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">无论你说什么都会否定你的人，都是什么心态？</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">焦虑的本质是对失控的恐惧 | 如何克服你的焦虑？</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">失眠的背后，也许是对关系的渴望</a></li>
+
+						</ul>
+						<ul class="down-2-2-2">
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">百合花开</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">愿你纵马天涯，归来仍满身豪情</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">爱，是遥远而咫尺的距离</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">有一种幸福叫“平平安安”</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">认识自己和他人</a></li>
+
+						</ul>
+						<ul class="down-2-2-3">
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">心理咨询的过程</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">心理咨询的分类和形式</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">心理咨询与心理治疗的关系</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">心理咨询与治疗的注意事项</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href=""class="blue">心理疾病的药物常识及其注意事项</a></li>
+
+						</ul>
+					</div>
+					
+				</div>
+				<div class="down-3">
+					<span class="blue">下载中心</span>
+					<div class="down-3-hr"></div>
+					<div class="down-3-1">
+						<ul>
+							<li><img src="../images/list_tabicon.png" /><a href="../file/file_1.doc"  class="blue">初始转介记录单(转介至心理中心)</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href="../file/file_2.pdf"  class="blue">个体心理咨询协议书</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href="../file/file_3.docx" class="blue">瑞格智能身心反馈训练系统--训练...</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href="../file/file_4.docx" class="blue">向校外转介学生辅导员联系书</a></li>
+							<li><img src="../images/list_tabicon.png" /><a href="../file/file_6.pdf"  class="blue">心理危机学生报表</a></li> 
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<div class="returnTop">
+				<div class="returnTop-img"><img src="../images/returnTop.png"></img>
+				</div>
+				<span>返回顶部</span>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-hr"></div>
+			<div class="content">
+				<pre>河南大学计算机与信息工程学院心理健康教育工作站  地址：河南大学计算机与信息工程学院101</pre>
+				<div class="span">电话：0371-23883169&nbsp;&nbsp;邮编：475000</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function cancal(){
+			if(window.confirm("您确定要注销吗？")){
+				window.location="../../cancal.php"
+			}
+	}
+</script>
+</html>
