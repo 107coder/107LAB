@@ -1,4 +1,0 @@
-#Log file 
-*.log
-*.ini
-*.cach
