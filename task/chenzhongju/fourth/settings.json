@@ -1,0 +1,14 @@
+{
+    "python.linting.enabled": false,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test*.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true,
+    "C_Cpp.errorSquiggles": "Disabled"
+}

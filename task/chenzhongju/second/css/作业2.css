@@ -1,0 +1,562 @@
+*
+{
+    margin: 0px;
+}
+#a1
+{
+    background: #F5AA02;
+    height:150px;
+   width: 100%;
+}
+#a11
+{   width: 600px;
+    height: 150px;
+    margin: 0 0 0 100px;
+    float: left;
+}
+#a12
+{
+    width: 240px;
+    height: 40px;
+    top: 55px;
+    left: 1000px;
+    position: absolute;
+    border-radius: 16px;
+    border: 1px solid #01ACB7;
+    background: #01ACB7;
+}
+#a121
+{
+    width: 170px;
+    height: 40px;
+    border: 2px solid #01ACB7;
+    border-radius: 10px;
+    margin: 0 0 0 5px;
+}
+#a122
+{
+    height: 30px;
+    padding:0 0 0 0;
+    width: 50px;
+    padding: 0 0 2 0;
+    border:1px solid #01ACB7;
+    background: #01ACB7;
+    margin: 0 0 0 0;
+    border-radius: 10px;
+}
+#a2
+{
+    background: #01ACB7;
+    height: 50px;
+    width: 100%;
+    margin: 0 0 0 0;
+    position: relative;
+}
+#a3
+{
+    height: 400px;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+#a311
+{
+    position: absolute;
+    top: 180px;
+    left: 1px;
+    width: 60px;
+    height: 75px;
+    z-index: 2;
+}
+#a312
+{
+    position: absolute;
+    top:180px;
+    right: 1px;;
+    width: 60px;
+    height: 75px;
+    z-index: 2;
+}
+#a31
+{
+    margin: 350px 0 0 550px;
+    width: 450px;
+    height: 55px;
+    background: #f9f9f9;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+#a31 ol
+{
+  list-style-type: none;
+}
+#a3 ol li
+{
+    width:50px;
+    height: 30px;
+    background: #81807C;
+    margin: 13px 0 0 35px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+#a3 ol li.current
+{
+    background: #EC6B0E;
+}
+#a3 ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 6076px;
+    position: absolute;
+
+}
+#a3 ul li
+{   float: left;
+    margin: 0 0 0 0px;
+    width: 1519px;
+}
+#a3 ul li img
+{
+    height:400px;
+    width:100%;
+}
+#a4
+{
+    height: 300px;
+    width: 1200px;
+    margin: 20 0 0 150;
+    
+}
+
+#a41
+{
+    width:478px;
+    height: 298px;
+    float: left;
+    border: 1px solid #F5AA02;
+    border-radius: 10px;
+}
+#a41 ul
+{
+    list-style-type: none;
+    float: left; 
+    background: #F5AA02;
+    height: 50px;
+    width:480px; 
+    border-radius: 10px;
+    padding: 0%;
+}
+#a41 ul li
+{
+    float: left;
+    width:240px; 
+    height: 50px;
+    font-size: 20px;
+    color: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+}
+.cu
+{
+    background: #EC6B0E;
+    border-radius:10px;
+}
+.tabcontent div
+{
+    border: 1px solid #EC6B0E;
+    height: 298px;
+    width: 478px;
+    border-radius: 10px;
+}
+.tabcontent div span
+{
+
+    color:#F5AA02;
+}
+.hide
+{   
+    display: none;
+}
+#a42
+{
+    width: 400px;
+    height: 295px;
+    float: left;
+    margin: 0px 10px 0px 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+#a42 ul
+{
+    list-style-type: none;
+    width: 1600px;
+    height: 200px;
+    position: absolute;
+    padding: 0 0 0 0px;
+}
+#a42 ul li
+{
+    float: left;
+}
+#a42 ul li img
+{
+    height: 198px;
+    width: 398px;
+    border: 1px solid #EC6B0E;
+}
+#a42 ol
+{
+    position: absolute;
+    margin: 200px 0 0 0px;
+    padding: 0 0 0 0px;
+    width: 400px;
+    height: 100px;
+    list-style-type: none;
+}
+#a42 ol li
+{
+    width: 90px;
+    height: 60px;
+    margin: 15px 0 0 6px;
+    float: left;
+    background: #EC6B0E
+}
+#a42 ol li img
+{
+    width: 90px;
+    height: 60px;
+}
+#a42 .introduce
+{
+    position: absolute;
+    width: 400px;
+    left: 0px;
+    top: 180px;
+    background: rgba(0,0,0,0.5) ;
+    color: #f9f9f9;
+}
+#a43
+{
+    width: 298px;
+    height: 298px;
+    float: left;
+    border: 1px solid #EC6B0E;
+    border-radius: 10px;
+}
+#a43 ul
+{
+    list-style-type: none;
+    height: 140px;
+    border-radius: 10px;
+}
+#a43 ul li
+{
+   margin: 10px 0 0 0;
+   color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#a43 span
+{
+    cursor: pointer;
+    height:200px;
+    width: 300px;
+}
+
+#a5
+{
+    height: 150px;
+    width: 1200px;
+    margin: 20px 0 0 150px;
+}
+#a51
+{
+    height: 150px;
+    width: 900px;
+    float: left;
+    border: 2px solid #EC6B0E;
+    overflow: hidden;
+    position: relative;
+}
+#a51 a
+{
+    position: absolute;
+    z-index: 2;
+}
+#left
+{
+   left:1px;
+    top: 60px;
+    opacity: 0.8;
+}
+#right
+{
+    right: 1px;
+    top: 60px;
+    opacity: 0.8;
+}
+#a51 ul
+{
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+}
+#a51 ul li
+{
+    margin-left:12px;
+    width: 200px;
+}
+#a52
+{
+    height: 150px;
+    width: 275px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+#a521
+{
+    position: absolute;
+    top: 940px;
+    left: 1090px;
+    cursor: pointer;
+}
+#a522
+{
+    position: absolute;
+    top: 940px;
+    left: 1220px;
+    cursor: pointer;
+}
+
+#a523
+{
+    position: absolute;
+    top:1015px;
+    left: 1090px;
+    cursor: pointer;
+}
+#a524
+{
+    position: absolute;
+    top: 1015px;
+    left: 1220px;
+    cursor: pointer;
+} 
+#a6
+{
+    background: #F5AA02;
+    height: 200px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    position: absolute;
+}
+#a61
+{
+    width:300px;
+    height: 120px;
+    margin:0 0 0 400px;
+    float: left;
+    position: absolute;
+}
+#a611
+{
+    height: 200px;
+    width: 300px;
+}
+#a62
+{
+    width: 350px;
+    height: 120px;
+    margin: 40px 0px 0px 800px;
+    float: left;
+    position: absolute;
+}
+#a7
+{
+    margin: 0 0 0 150px;
+    position: absolute;
+    z-index: 2;
+}
+.dropbtn 
+{
+    background-color: #01ACB7;
+    color: white;
+    padding: 8px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 30px;
+    width: 130px;
+    position: relative
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;   
+}
+.dropdown-content 
+{    
+    position: absolute;
+    min-width: 130px;
+    margin: 0 0 0 30;
+    text-align: center;
+    display: none;
+}
+.dropdown-content a
+ {
+    color: #f9f9f9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover
+{
+     background-color: #F5AA02;
+     width: 98px;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+    background: #01ACB7;
+}
+.dropdown:hover .dropbtn 
+{
+    background-color: #EC6B0E;
+}
+.c11
+{
+    position: absolute;
+    top: 700px;
+    left: 350px;
+   display: none;
+    z-index: 3;
+    background: rgba(0,0,0,0.8);
+    width: 800px;
+    height: 500px;
+}
+.c11 img
+{
+    margin: 120 0 0 170px;
+}
+
+.c12
+{
+    position: absolute;
+    top: 700px;
+    left: 350px;
+   display: none;
+    z-index: 3;
+    background: rgba(0,0,0,0.8);
+    width: 800px;
+    height: 500px;
+}
+.c12 img
+{
+    margin: 120 0 0 170px;
+}
+.c13
+{
+    position: absolute;
+    top: 700px;
+    left: 350px;
+   display: none;
+    z-index: 3;
+    background: rgba(0,0,0,0.8);
+    width: 800px;
+    height: 500px;
+}
+.c13 img
+{
+    margin: 120 0 0 170px;
+}
+.c14
+{
+    position: absolute;
+    top: 700px;
+    left: 350px;
+   display: none;
+    z-index: 3;
+    background: rgba(0,0,0,0.8);
+    width: 800px;
+    height: 500px;
+}
+.c14 img
+{
+    margin: 120 0 0 170px;
+}
+
+.c2
+{
+    position: absolute;
+    top: 380px;
+    left: 80px;
+
+}
+.c3
+{
+    position: absolute;
+    top: 380px;
+    left: 1400px;
+}
+.c5
+{
+    list-style-type: none;
+    float: left;
+    margin: 0 0 0 0;
+}
+.c6
+{
+    border:2px solid #EC6B0E;
+} 
+.c7
+{
+    width: 300px;
+    height: 50px;
+    background: #F5AA02;
+    margin: 0px;
+    font-size: 30;
+    color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 10px
+}
+#a43 ul li a
+{
+    text-decoration:none;
+    color: black;
+}
+.c71
+{
+    width: 300px;
+    height: 50px;
+    background: #EC6B0E;
+    margin: 0px;
+    font-size: 30;
+    color: #f9f9f9; 
+    cursor: pointer;
+}
+.c8
+{
+    position: absolute;
+    top:-40px;
+    left: 490px;
+}
+.c9
+{
+    margin: 0 0 0 400px;
+}
+.hover 
+{
+    text-decoration: none;
+    color: black;
+}
+.hover:hover
+{
+    color: #EC6B0E
+}

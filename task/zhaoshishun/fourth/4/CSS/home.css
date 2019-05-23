@@ -1,0 +1,328 @@
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+	
+}
+.acolor{
+	background-color:rgba(60,147,237,0.9);
+}
+.bcolor{
+	opacity:0.7;
+}
+.ccolor{
+	color:#fff!important;
+	background-color:rgb(57,164,219)!important;
+}
+.dcolor{
+	color:rgb(57,164,219)!important;
+}
+.ecolor{
+	color:#fff;
+}
+.float img{
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:99;
+	width:80px;
+	height:80px;
+}
+.header-4{
+	width:100%;
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.image-1{
+	width:500%;
+	height:400px;
+	position:absolute;
+
+	overflow:hidden;
+	
+}
+.image-1 img{
+	width:20%;
+	height:400px;
+	float:left;
+	position:relative;
+	
+}
+.header-points{
+	margin:auto; 
+	width:140px;
+	height:10px;
+	position:absolute;
+	bottom:20px;
+	left:48%;
+}
+
+.header-points ul li {
+	list-style:none;
+	float:left;
+}
+.dot{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	margin-left:10px;
+	position:relative;
+}
+.header-points ul li img{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	position:absolute;
+	left:0;
+}
+
+.main{
+	width:100%;
+	height:575px;
+	
+}
+/*中间的上面*/
+.main1{
+	width:1100px;
+	height:320px;
+	margin:0 auto;
+}
+.hr{
+	margin-top:20px;
+	width:1100px;
+	height:5px;
+	background-color:rgb(57,164,219);
+}
+/*左边的图和右边的字*/
+.main1-1{
+	margin-top:8px;
+	height:310px;
+	width:1100px;
+	overflow:hidden;
+	position:relative;
+	
+}
+/*左边的图*/
+.main1-1-1{
+	float:left;
+	width:400px;
+	height:300px;
+	overflow:hidden;
+}
+.image{
+	width:400px;
+	height:300px;
+}
+.image ul li{
+	list-style:none;
+	width:400px;
+	height:300px;
+	float:left;
+	display:none;
+}
+.image ul li img{
+	width:400px;
+	height:300px;
+	position:relative;
+	
+}
+.num{
+	background-color:#fff;
+	width:42px;
+	height:20px;
+	border:1px solid #fff;
+	position:absolute;
+	left:325px;
+	bottom:20px;
+	
+}
+.number-1{
+	float:left;
+	width:20px;
+	height:20px;
+	background-color:rgb(204,204,204);
+	text-align:center;
+	color:rgb(57,164,2119);
+	cursor:pointer;
+}
+.number-2{
+	float:right;
+	height:20px;
+	width:20px;
+	text-align:center;
+	background-color:rgb(204,204,204);
+	color:rgb(57,164,2119);
+	cursor:pointer;
+}
+/*右边的字*/
+.main1-1-2{
+	float:right;
+	width:600px;
+	height:300px;
+	position:absolute;
+	top:20px;
+	right:60px;
+}
+.up-1{
+	font-size:20px;
+}
+.up-1 a{
+	color:black;
+}
+.up-2{
+	width:600px;
+	height:3px;
+	margin-top:10px;
+	background-color:rgb(57,164,219);
+}
+.up-3{
+	margin-top:5px;
+	min-height:200px;
+}
+.up-3 ul li{
+	list-style:none;
+	margin-top:10px;
+	
+}
+.up-3 ul li a{
+	color:black;
+}
+.up-3 ul li img{
+	width:16px;
+	height:16px;
+}
+/*中间的下面*/
+.main2{
+	width:1100px;
+	height:250px;
+	margin:0 auto;
+}
+.down-1{
+	width: 280px;
+    height: 250px;
+    float: left;
+    margin-left: 15px;
+	margin-top:15px;
+}
+.down-1-hr{
+	width:280px;
+	height:2px;
+	background-color:rgb(57,164,219);
+	margin-top:10px;
+}
+.down-1 p{
+	margin-top:10px;
+}
+.down-1 span{
+	width:280px;
+	height:25px;
+	
+	font-size:20px;
+	
+}
+.down-2{
+	width: 450px;
+    height: 230px;
+    float: left;
+    margin-left: 20px;
+}
+.down-2-1 ul li{
+	float:left;
+	height:50px;
+	width:120px;
+	text-align:center;
+	line-height:50px;
+	list-style:none;
+	font-size:20px;
+	border-radius:10px;
+	
+}
+.down-2-1 ul li span{
+	cursor:pointer;
+}
+.down-2-hr{
+	width:450px;
+	height:2px;
+	background-color:rgb(57,164,219);
+	margin-top:50px;
+}
+.down-2-2{
+	width:450px;
+	height:155px;
+	overflow:hidden;
+}
+.down-2-2 ul{
+	display:none;
+}
+.down-2-2 ul li{
+	list-style:none;
+	height:19px;
+	margin-top:10px;
+	line-height:19px;
+}
+.down-2-2 ul li a{
+	text-decoration:none;
+	color:black;
+}
+.down-2-2 ul li img{
+	width:20px;
+	height:20px;
+}
+
+.down-3{
+	width: 280px;
+    height: 230px;
+    float: left;
+    margin-left: 20px;
+}
+.down-3 span{
+	width:280px;
+	height:25px;
+	position:relative;
+	top:15px;
+	font-size:20px;
+	
+}
+
+.down-3-hr{
+	width:280px;
+	height:2px!important;
+	background-color:rgb(57,164,219);
+	margin-top:23px;
+}
+.down-3 ul li{
+	list-style:none;
+	height:19px;
+	margin-top:10px;
+	line-height:19px;
+}
+.down-3 ul li img{
+	width:20px;
+	height:20px;
+}
+
+.returnTop{
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	margin:0 auto;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	
+}
+.returnTop span{
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	text-align:center;
+	display:none;
+	color:#fff;
+	font-size:15px;
+	background-color:grey;
+	width:40px;
+	height:40px;
+}

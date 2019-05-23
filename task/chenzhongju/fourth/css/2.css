@@ -1,0 +1,150 @@
+*
+{
+    margin: 0px;
+    width:100%;
+padding:0px;
+height:auto;
+}
+body{
+    margin: 0px;
+    width:100%;
+    padding: 0px;
+}
+.other
+{
+    background: #39A4DB;
+    position: relative;
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+}
+.other pre
+{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    left: 75%;
+    top: auto;
+    font-size: 15px;
+    margin: 0%;
+    padding: 0%;
+    width: auto;
+}
+.top-title
+{
+    height: 110px;
+    width: 100%;
+    position: relative;
+}
+.top-title a
+{
+    margin-left: 16%;
+    position: absolute;
+    height: 110px;
+    width: 806px;
+}
+.top-title img
+{
+    height: 70px;
+    width: 806px;
+    cursor: pointer;
+    margin-top:15px;  
+}
+.banner
+{
+    height: 50px;
+    width: 100%;
+    background: #39A4DB;
+    float: left;
+}
+.banner_1
+{
+    list-style-type: none;
+    cursor: pointer;
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner_1 li
+{
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+.banner_1 li:hover
+{
+    background-color: blue;
+}
+.banner_1 li a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+.banner_2
+{
+    display: none;
+    background: #39A4DB;
+    width: 120px;
+    height: auto;
+    list-style-type: none;
+    cursor: pointer;
+    position: absolute;
+    padding: 0px;
+    z-index: 2;
+
+}
+.banner_2 li
+{
+    float: left;
+    padding: 0px;
+}
+.current
+{
+    background: blue;
+}
+.content
+{
+    width: 100%;
+    height: 500px;
+    margin: 100px 0 0 0;
+    padding: 0%;
+    position: relative;
+    border-top:5px solid #39A4DB;
+}
+.content ol
+{  
+    margin-left:15px ;
+    padding: 0%;
+    left: 20%;
+    top: 40%;
+    position: absolute;
+
+}
+.content h1
+{
+    text-align: center;
+}
+.content p
+{
+    width: 880px;
+    height: 100px;
+    position: relative;
+    left:20%;
+    top: 2%;
+}
+.foot
+{
+    border-top: 2px solid grey;
+    margin: 0px 0 0 0;
+    position: absolute;
+    z-index: 1;
+}
+.foot pre
+{
+    margin: 20px 0 10px 30%;
+    position: absolute;
+    width: 180px;
+}
