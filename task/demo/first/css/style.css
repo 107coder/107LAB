@@ -1,0 +1,304 @@
+div,p,span,img,a,h1,h2,h3,h4,h5,h6,body,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    background-color: #373D41;
+    font-family: PingFangSC,helvetica neue,hiragino sans gb,arial,microsoft yahei ui,microsoft yahei,simsun,"sans-serif"!important;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    direction: none;
+    text-decoration-line: none;
+}
+.body{
+    width: 100%;
+    min-width: 1000px;
+    height: 870px;
+    background-color: #1F2325;
+    background: url(../images/back.jpg) center top no-repeat scroll;
+    background-size: cover; 
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+img{
+    cursor: pointer;
+}
+/* Hnader Start */
+.header{
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    width: 100%;
+    height: 40px;
+}
+
+.logo{
+    float: left;
+    display: block;
+}
+
+.logo li{
+    float: left;
+}
+
+.menu img{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid  rgba(255,255,255,0.3);
+}
+
+.logo_img img{
+    margin: 10px;
+    width: 80x;
+    height: 20px;
+    background: url(../images/logo.gif) no-repeat scroll;
+}
+
+
+.nav {
+    width: 500px;
+    height: 40px;
+    float: right;
+    color: #fff;
+    display: block;
+}
+
+.nav a li{
+    float: right;
+    margin-right: 20px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.shop{
+    height: 20px;
+    width: 26px;
+    margin: 10px 5px 0 0;
+    float: right;
+}
+.china{
+    width: 75px;
+    height:40px;
+    float: right;
+    line-height: 40px;
+    font-size: 16px;
+    display: block;
+    margin-right: 30px;
+    position: relative;
+}
+
+.china>img{
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.search{
+    display: block;
+    float: right;
+}
+
+.search input{
+    width: 200px;
+    height: 38px;
+    border: 0;
+    color: #fff;
+    background: url(../images/sousuo.png) no-repeat right;
+    background-size:20px 20px;
+    background-position-x: 90%;
+    background-color: #454B50;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+
+/* Header End */
+
+/* Content Start */
+
+.content{
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.content_left{
+    width: 360px;
+    /* height: 200px; */
+    margin-top: 80px;
+    color: #fff;
+    float: left;
+}
+
+.content_left h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.content_left ul li{
+    font-size: 14px;
+    margin: 15px 0;
+	white-space: nowrap;
+}
+
+.content_right{
+    width: 340px;
+    /* height: 340px; */
+    background-color: #fff;
+    float: right;
+    padding: 25px;
+}
+
+.login_title{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    background: url(../images/saoma.png) no-repeat right;
+} 
+
+.login_form input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.button{
+    background: #00C1DE;
+    border:0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+.login_tag{
+    width: 100%;
+    height: 50px;
+}
+.login_tag ul li{
+    float: right;
+    margin: 0 7px;
+}
+
+.login_tag a{
+    color: rgb(114, 115, 117)
+}
+
+.login_other{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.login_other ul{
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    left: 110px;
+    top: 0;
+}
+
+.login_other li{
+    float: left;
+    margin-right: 8px;
+}
+
+.login_other img{
+    width: 25px;
+    height: 25px;
+}
+/* Content End */
+
+
+/* Footer Start */
+.footer{
+    width: 100%;
+    height: 220px;
+    margin-top: 50px; 
+    background-color:#373D41;
+    padding-top: 20px;
+}
+
+.footer_content{
+    max-width: 1280px;
+    height: 160px;
+    margin: 40px auto;
+}
+
+.footer_1{
+    width: 100%;
+    min-width:1000px;
+    height: 50px;
+}
+
+.footer_1 a{
+    color: #9b9ea0;
+}
+
+.footer_1 ul li{
+    float: left;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.footer_2 a{
+    color: #73777a;
+    font-size: 13px;
+}
+
+.footer_2{
+    max-width: 1280px;
+    height: 50px;
+}
+
+.footer_2 ul li{
+    float: left;
+    margin-right: 21px;
+    line-height: 30px;
+}
+
+.footer_content span{
+    color: #73777a;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.footer_content img{
+    width: 25px;
+    height: 25px;
+}
+/* Footer End */
+
+/* Advice Start */
+.advice{
+    width: 20px;
+    height: 100px;
+    background: url(../images/zixun.png) no-repeat top;
+    background-size: 35px 26px;
+    background-position-y: 10px;
+    background-color: #00C1DE;
+    position: fixed;
+    right: 20px;
+    top: 60vh;
+    color: #fff;
+    font-weight: 100;
+    padding: 10px;
+    padding-top: 40px;
+    font-size: 16px;    
+    text-align: center;
+}
+/* Advice End */
