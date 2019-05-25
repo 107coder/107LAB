@@ -1,0 +1,42 @@
+#content a{
+	color: #000000;
+}
+#content a:hover{
+	color:#39A4DB;
+}
+#content{
+	width:70%;
+	height:550px;
+	margin:40px auto;
+}
+.title{
+	height:25px;
+	border-bottom:5px solid #39A4DB;
+}
+.title span,.title a{
+	float:left;
+}
+.doc{
+	margin-top:20px;
+	margin-left: 10px;
+}
+.doc img{
+	height: 20px;
+}
+.doc img,.doc a{
+	float:left;
+}
+.doc ul li{
+	width:500px;
+	line-height:30px;
+	padding: 5px;
+}
+.picture,.doc{
+	float:left;
+}
+.turn{
+	float: right;
+}
+input{
+	width:50px;
+}
