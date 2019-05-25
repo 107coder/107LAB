@@ -1,0 +1,6 @@
+.settings/*
+*.log
+*.xml
+*/cache/*
+!*/cache/*.php
+/vendor/

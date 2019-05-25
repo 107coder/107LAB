@@ -1,0 +1,28 @@
+#content a{
+	color: #000000;	
+}
+#content a:hover{
+	color:#39A4DB;
+}
+#content{
+	width:70%;
+	height:400px;
+	margin:40px auto;
+}
+.title{
+	height:25px;
+	border-bottom:5px solid #39A4DB;
+}
+.title span,.title a{
+	float:left;
+}
+.doc{
+	margin-top:10px;
+}
+.doc ul li{
+	height:40px;
+	line-height:40px;
+}
+.doc img,.doc a{
+	float:left;
+}

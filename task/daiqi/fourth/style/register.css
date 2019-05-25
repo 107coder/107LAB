@@ -1,0 +1,72 @@
+#content{
+	width:500px;
+	height:420px;
+	background-color:#39A4DB;
+	box-shadow:2px 7px 4px 1px #000;
+	margin:50px auto;
+	border-radius:8px;
+}
+#header h1 {
+	border-bottom: 1px solid #ededed;
+    color: #666;
+    font-size: 30px;
+    font-weight: 240;
+    padding: 10px 15px;
+}
+#middle form {
+	padding-top:20px;
+	color:#333;
+	height:300px;
+	width: 400px;
+	margin:auto;
+}
+#middle table{
+	display:block;
+	font-size: 18px;
+    line-height: 30px;
+}
+#name,#password{
+	width:250px;
+	height:30px;
+	background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow:2px 2px 2px #f0f0f0;
+    color: #333;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 30px;
+    margin:10px auto;
+    padding: auto;
+    vertical-align: middle;
+}
+#middle form .sex{
+	height:14px;
+	width:50px;
+	margin-left:15px;
+}
+#check{
+	background-color:#39A4DB;
+	height:20px;
+	width:20px;
+	margin:0 20px 0 90px;
+	vertical-align: middle;
+
+}
+#middle form td .btn{
+	border-radius: 2px;
+	width:50px;
+	height:23px;
+    font-size: 17px;
+    line-height: 23px;
+    background:0 0 #f3f3f3;
+    border: 1px solid #b1aeae;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	margin:20px 0 20px 115px;
+}
