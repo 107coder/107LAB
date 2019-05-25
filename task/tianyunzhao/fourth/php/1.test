@@ -1,0 +1,23 @@
+示例：文本式留言板
+需要知识点
+1.文件操作 
+   file_put_contents();文件写入函数
+   file_get_contents();文件内容读取函数
+2.字符串的处理函数
+   explode();将字符串拆分成数组的函数
+   implode();将数据以指定分割符合并成子串的函数
+3.数组
+   foreach()遍历数组
+   unset() 销毁变量
+   $_post{}
+   $_SERVER["REMOTE_ADD"]//获取客户端的ip地址
+   time();//获取当前系统的时间戳
+   date();日期转换函数
+
+示例的目录结构
+===========================
+       1.index.php添加留言信息界面
+       2.doAdd.php获取留言信息，并执行添加操作的php文件
+       3.show.php显示留言信息的界面
+       4.del.php执行删除留言信息的php文件
+       5.liuyan.txt用于储存留言信息的文件

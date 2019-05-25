@@ -1,0 +1,21 @@
+<?php
+header('content-type:text/html;charset=UTF-8');
+?>
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>管理员登录</title>
+    </head>
+    <body>
+        <div style="width:400px;height:300px;position: absolute;text-align: center;background-color:aquamarine;left:35%;top:20%;" >
+            <form name="login"  action="guanliyuan.php" method="post" style="position:relative;left:5px;">
+                <p style="position:relative;top:50px;left:-45px;">管理员用户名<input type=text name="name"  style="width:200px;height:20px;"></p>
+                <p style="position:relative;top:70px;left:-13px;">密码<input type=password name="password" style="width:200px;height:20px;"></p>
+                <p style="position:relative;top:90px;left:-2px;"><input type="submit" name="submit" value="登录" style="height:25px;width:100px;"></p>                            
+            </form>
+            <a href="login.html" style="position:relative;bottom:-100px;">点击跳转到用户登录页面</a>
+        </div>
+    </body>
+</html>
