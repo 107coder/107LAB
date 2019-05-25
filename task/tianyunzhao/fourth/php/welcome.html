@@ -1,0 +1,50 @@
+
+
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>登陆成功</title>
+        <style>
+         .deng{
+            width:80%;
+            height:500px;
+            border: 2px solid red;             
+         }
+
+        </style>
+    </head>
+    
+    <body>
+        欢迎光临
+        <div class="deng">
+            <td>
+               <?php $f=isset($_POST);
+               
+               $value=$f["textvalue"];
+               //执行编辑操作，更新或插入
+               $data=array(
+               'newvalue'=>$value);
+               echo json_encode($data);
+               echo file_get_contents("http://localhost:8080/222/php/6.php");
+               ?>
+            </td>
+        </div>
+
+    </body>
+</html>
+<script>
+    var params = $('form').serialize();
+    var url="6.php";
+$.ajax({
+url: url,
+type: 'post',
+data: params,
+dataType:'json',
+success: function (data) {
+$('#textvalue').html(data.newvalue);
+}
+});
+</script>
