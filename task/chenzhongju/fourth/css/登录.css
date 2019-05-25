@@ -1,0 +1,107 @@
+body
+{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    background: url(../images/bac.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.title
+{
+    position: absolute;
+    left: 42%;
+    top: 10%;
+    font-size: 50px;
+    cursor: pointer;
+}
+.dl
+{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    left: 33%;
+    top: 28%;
+} 
+.dl form
+{
+    border: 2px solid blue ;
+    height: 250px;
+    border-radius: 10px;
+}
+.dl form a
+{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #FFFF37;
+    cursor: pointer;
+}
+.name1
+{
+    background: #ffffff;
+    margin: 20px 0 0 10px;
+    width: 77%;
+    height: 40px;
+    border: 0px;
+    font-size: 20px;
+    border: 2px solid #46A3FF;
+}
+.name2
+{
+    background: #ffffff;
+    margin: 20px 0 0 10px;
+    width: 77%;
+    height: 40px;
+    border: 0px;
+    font-size: 20px;
+    border: 2px solid #46A3FF;
+}
+.name3
+{
+    margin: 10% 0 0 17%;
+    width: 20%;
+    text-align: center;
+    float: left;
+    background: #ffffff;
+    border: 0px;
+    font-size: 20px;
+    border: 2px solid #46A3FF;
+    cursor: pointer;
+
+}
+.name4
+{
+    margin: 10% 0 0 8%;
+    width: 20%;
+    text-align: center;
+    float: left;
+    background: #ffffff;
+    border: 0px;
+    font-size: 20px;
+    border: 2px solid #46A3FF;
+    cursor: pointer;
+}
+.name5
+{
+    margin: 10% 0 0 8%;
+    width: 20%;
+    text-align: center;
+    float: left;
+    background: #ffffff;
+    border: 0px;
+    font-size: 20px;
+    border: 2px solid #46A3FF;
+    cursor: pointer;
+}
+.name3:active {
+    background-color:  #46A3FF;
+}
+.name4:active
+{
+    background: #46A3FF;
+}
+.name5:active
+{
+    background: #46A3FF;
+}
