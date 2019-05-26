@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script src="jquery.js"></script>
+
+<style>
+.container{
+    position: relative;
+    left:0;
+    top:160px;
+    width: 1600px;
+    height:380px;
+    overflow: hidden;
+}
+.container img{
+    float:left;
+    width:1600px;
+    height:380px;
+    z-index:-2;
+   
+}
+
+
+.container ol{
+    position: absolute;
+    bottom:20px;
+    left:700px;
+}
+.container ol li{
+    width:11px;
+    float:left;
+    margin-right:20px;
+    height:11px;
+  background-color: #4289C9;
+  cursor: pointer;
+}
+.container ol li.current2{
+    background-color:#39a4db;
+}
+.container ul{
+    width:6400px;
+   position: absolute;
+   left:0;
+   top:0;
+}
+.container ul li{
+    float:left;
+    width:1600px;
+   height:380px;
+}
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td
+    {
+        margin:0;
+	    padding:0;
+        list-style: none;
+        text-decoration: none;
+    }
+    #div{
+  width:600px;
+  height:300px;
+    overflow: hidden;  
+    }
+    #div1 img{
+        width:600px;
+  height:300px;
+      
+    }
+</style>
+<script>
+        $(function(){
+          var imgO1=$(".container ul");
+          var imgLi=$(".container ul li");
+          var imgPoint=$(".container ol li");
+          var img=$(".container img");
+          var imgWidth=img.width();
+          var imgLength = imgLi.length;
+    var timeId = null;
+    var _index = 0;   
+    var _index2 = 0;  
+    var banner_timeId = null;
+     function banner(){
+         if(_index>=imgLength-1){
+             _index2=0;
+         }else{
+             _index2++;
+         }_index++;
+        if(_index==4)
+        {
+            _index=0;
+        }
+        imgPoint.eq(_index2).addClass("current2").siblings().removeClass();
+        imgLi.eq(_index).fadeIn(1000).siblings().hide();
+     }
+     function click(){
+         clearInterval(timeId);
+         _index2=$(this).index();
+         _index=_index2;
+         imgLi.eq(_index).fadeIn(1000).siblings().hide();
+         timeId = setInterval(banner,4000); 
+     }
+     clearInterval(timeId);     
+
+    timeId = setInterval(banner,4000);
+    imgPoint.click(click);
+    
+    ////////////////
+    $(function(){
+		$('#div1 img').mouseenter(function(){
+			var wValue=1.5 * $(this).width();
+			var hValue=1.5 * $(this).height();		
+			$(this).animate({width: wValue,
+							height: hValue,
+							left:("-"+(0.5 * $(this).width())/2),
+							top:("-"+(0.5 * $(this).height())/2)}, 1000);
+		}).mouseleave(function(){
+			$(this).animate({width: "100",
+										 height: "80",
+										 left:"0px",
+										 top:"0px"}, 1000 );
+		});
+	});
+
+ 
+
+        });
+        </script>
+    <title>Document</title>
+</head>
+<body>
+     <!--- <div class="container">
+                <ul>
+                    <li><img src="img/image1.jpg"></li>
+                    <li><img src="img/image2.jpg"></li>
+                    <li><img src="img/image3.jpg"></li>
+                    <li><img src="img/image4.jpg"></li>
+                </ul>
+                <ol>
+                    <li class="current2"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>-->
+           <div id="div1"><img src="img/image1.jpg"></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+    <script>
+   $(function(){
+    var show=$('#showone');
+    var hide=$('#hideone');
+   var close=$('#hideone span');
+    show.click(function(){
+        hide.show();
+
+    });
+close.click(function(){
+ hide.hide();
+});
+
+});
+    
+    </script>
+    <style>
+   #hideone{
+    width:400px;
+  display:none;
+
+}
+#hideone img{
+    width:400px;
+    height:300px;
+}
+#showone{
+    position: absolute;
+    left:1000px;
+    top:900px;
+    width:100px;
+    height:100px;
+}
+#showone img{
+    width:130px;
+    height:100px;
+}
+#hideone span{
+float:right;
+font-size:14px;
+cursor: pointer;
+}
+    
+    </style>
+</head>
+<body>
+        <div id="showone">
+       
+                <img src="images/dog 1.jpg">
+            </div>
+            <div id="hideone">
+                    <span>关闭</span>
+                <img src="images/dog 1.jpg">
+            </div>
+    
+</body>
+</html>

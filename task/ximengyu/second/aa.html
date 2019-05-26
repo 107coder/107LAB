@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>轮播图制作</title>
+        <style>
+            .container {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                width: 600px;
+                height: 270px; 
+            }
+            .box, .box img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .circle {
+                width: 200px;
+                height: 14px;
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                margin-left: -100px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .circle b {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-color: #000;
+                border-radius: 50%;
+                margin: 3px;
+            }
+            .circle .current {
+                background-color: #fff;
+            }
+            .btn {
+                position: absolute;
+                top: 50%;
+                width: 40px;
+                height: 50px;
+                margin-top: -25px;
+                background-color: rgba(255, 255, 255, .7);
+                text-align: center;
+                line-height: 40px;
+                font-size: 50px;
+                cursor: pointer;
+            }
+            .left {
+                left: 0;
+            }
+            .right {
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <img src="https://img-blog.csdn.net/20170908172159479">
+                <img src="https://img-blog.csdn.net/20170908172353986">
+                <img src="https://img-blog.csdn.net/20170908172424315">
+                <img src="https://img-blog.csdn.net/20170908172444061">
+                <img src="https://img-blog.csdn.net/20170908172525692">
+                <img src="https://img-blog.csdn.net/20170908172549035">
+            </div>
+            <div class="circle">
+                <b class="current"></b>
+                <b></b>
+                <b></b>
+                <b></b>
+                <b></b>
+                <b></b>
+            </div>
+            <div class="btn left"> < </div>
+            <div class="btn right"> > </div>
+        </div>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script>
+        <script type="text/javascript">
+            var i = 0;
+            var timer;
+            $(function(){
+                $("img").eq(0).show().siblings().hide();
+                start();
+                $("b").hover(function(){
+                    clearInterval(timer);
+                    i = $(this).index();
+                    change();
+                }, function(){
+                    start();
+                });
+                $(".left").click(function(){
+                    i--;
+                    if(i == -1){
+                        i = 5;
+                    }
+                    change();
+                });
+                $(".right").click(function(){
+                    i++;
+                    if(i == 6){
+                        i = 0;
+                    }
+                    change();
+                });
+            });
+            function start(){
+                timer = setInterval(function(){
+                    i++;
+                    if(i == 6){
+                        i = 0;
+                    }
+                    change();
+                }, 3000);
+            }
+            function change(){
+                $("img").eq(i).fadeIn(300).siblings().stop(true, true).fadeOut(300);
+                $("b").eq(i).addClass("current").siblings().removeClass("current");
+            }
+        </script>
+    </body>
+</html>
