@@ -1,0 +1,370 @@
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td
+    {
+        margin:0;
+	    padding:0;
+        list-style: none;
+        text-decoration: none;
+    }
+a:hover{
+    color:#39a4db;
+}
+.head{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #39a4db;
+    width:100%;
+    height:33px;}
+.tag{
+    position: absolute;
+    top:2px;
+    right:150px;
+    color:white;
+    cursor: pointer;
+}
+.logo{
+    position: absolute;
+    top:33px;
+    left:0;
+    width:100%;
+    height:200px;
+}
+#icon{
+    position: absolute;
+    top:15px;
+    left:250px;;
+    width:800px;
+    height:70px;
+}
+.header_nav{
+    width:100%;
+    height:40px;
+    background-color: #39a4db;
+    position: absolute;
+    top:120px;
+    z-index:20;
+}
+.header_nav_content{
+    width:1200px;
+    height:45px;
+    background-color: #39a4db;
+    margin:0 auto;
+    text-align: center;
+}
+.header_nav_content ul li{
+    color: white;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    float: left; 
+    width: 125px;
+    height: 45px;
+    /* overflow: hidden; */
+    /* margin: 0 30px; */
+    cursor: pointer;
+    /* padding: 0 33px; */
+}
+.header_nav_content ul li:hover{
+    background-color: #3C93ED;
+}
+.header_nav_content a{
+    color: #fff;
+}
+.nav_list ol{
+    display: none;
+    box-shadow:3px 3px 3px #000;
+}
+.nav_list ol li {
+    float: none;
+    width: 125px;
+    font-size: 15px;
+    padding: 0px;
+    background-color:#39a4db;
+    
+}
+.nav_list ol li a{
+    color: #fff;
+}
+.nav_list ol li:nth-child(1){
+    padding: 0;
+}
+.container{
+    position: relative;
+    left:0;
+    top:160px;
+    width: 1600px;
+    height:380px;
+    overflow: hidden;
+}
+.container img{
+    float:left;
+    width:1600px;
+    height:380px;
+    z-index:-2;
+   
+}
+
+
+.container ol{
+    position: absolute;
+    bottom:20px;
+    left:700px;
+}
+.container ol li{
+    width:11px;
+    float:left;
+    margin-right:20px;
+    height:11px;
+  background-color: #4289C9;
+  cursor: pointer;
+}
+.container ol li.current2{
+    background-color:#39a4db;
+}
+.container ul{
+    width:6400px;
+   position: absolute;
+   left:0;
+   top:0;
+}
+.container ul li{
+    float:left;
+    width:1600px;
+   height:380px;
+}
+.line{
+    position: absolute;
+    top:555px;
+    left:200px;
+    width:1100px;
+    height: 6px;
+    background-color: #39a4db;
+}
+.content{
+    width:1100px;
+    height:550px;
+    position: absolute;
+    top:565px;
+    left:200px;
+}
+.news{
+    margin-left:500px;
+}
+.news span{
+    color:black;
+    cursor: pointer;
+    line-height:30px;
+    font-size:20px;
+}
+.line2{
+    width:550px;
+    height:3px;
+    position: relative;
+    top:10px;
+    background-color: #39a4db;
+}
+.news img{
+    width:15px;
+    height:15px;
+}
+.news ul li{
+    
+    line-height: 30px;
+}
+.news a{
+    cursor: pointer;
+    font-weight:200;
+    font-size:16px;
+    font-family: "宋体";
+}
+.line3{
+    width:330px;
+    height:3px;
+    position: relative;
+    top:10px;
+    background-color: #39a4db;
+    margin-bottom:20px;
+}
+.introduce{
+    position: relative;
+    top:40px;
+    width:330px;
+    height:400px;
+}
+.introduce span{
+    color:black;
+    cursor: pointer;
+    font-size:20px;
+    font-family:"宋体";
+    font-weight:900;
+}
+.introduce a{
+    font-weight:150;
+    margin-top:8px;
+    color:#39a4db;
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+.heart{
+    position: absolute;
+    top:330px;
+    left:380px;
+    width:390px;
+    height:250px;
+}
+.heart ul li{
+  cursor: pointer;
+}
+.topic a{
+    font-family:"宋体";
+}
+.title ul li{
+   float:left;
+   width:130px;
+   height:37px;
+   line-height: 30px;
+   text-align: center;
+   font-size:20px;
+   font-family:"宋体";
+   font-weight:900;
+}
+.current5{
+    background-color: #39a4db;
+    color:white;
+}
+.line4{
+    position: relative;
+    top:36px;
+    width:390px;
+    height:3px;
+    background-color: #39a4db;
+}
+.download{
+    position: absolute;
+    top:330px;
+    left:810px;
+    width:300px;
+    height:220px;
+}
+.download span{
+    cursor: pointer;
+    font-size:20px;
+    font-family:"宋体";
+    font-weight:900;
+    color:black;
+}
+.download a{
+    cursor: pointer;
+}
+.line5{
+   position: relative;
+   top:13px;
+    width:290px;
+    height:3px;
+    background-color: #39a4db;
+    margin-bottom:10px;
+}
+.line6{
+    position: absolute;
+    left:0;
+    top:1130px;
+    width:100%;
+    height:5px;
+    background-color: #ccc;
+}
+.footer{
+    width:800px;
+    height:35px;
+    position: absolute;
+    left:450px;
+    top:1160px;
+}
+.footer p,span{
+    font-size:13px;
+    color:#565656;
+}
+.footer span{
+    padding-left:200px;
+}
+.photo {
+position: absolute;
+width:400px;
+height:300px;
+top:555px;
+left:210px;
+overflow: hidden;
+}
+.photo img{
+    width:400px;
+    height:300px;
+}
+.photo ul li{
+    float:left;
+    width: 400px;
+    height:300px;
+}
+.photo ul{
+    position: absolute;
+    left:0;
+    top:0;
+    width:800px;
+}
+.photo ol li{
+    float:left;
+    width: 15px;
+    height:15px;
+    line-height:15px;
+    text-align: center;
+    border:white 1px solid;
+    color:#39a4db;
+    background-color: #ccc;
+   cursor: pointer;
+
+}
+.photo ol {
+    position: absolute;
+    bottom:30px;
+    right:20px;
+}
+.photo ol li.now{
+    background-color: #39a4db;
+    color:white;
+}
+
+
+#buttom{
+    position:fixed;
+   bottom:20px;
+   right:15%;
+    width:50px;
+    height:50px;
+  
+}
+.hidden{
+    display:none;
+    color:red;
+}
+.float{
+    z-index:50;
+    width:400px;
+    height:90px;
+    font-size:28px;
+    font-family:"宋体";
+    position:fixed;
+    top:0;
+    left:0;
+   background-color: #F5AA02;
+}
+.float p{
+    padding-top:25px;
+}
