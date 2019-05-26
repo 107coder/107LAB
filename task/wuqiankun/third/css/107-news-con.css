@@ -1,0 +1,17 @@
+@charset "utf-8";
+.content-top h3{
+    color:#000;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:24px;
+}
+.content-top pre{
+    color:#000;
+    font-size:16px;
+    width:950px;
+    text-align: center;
+}
+.content-top pre span{
+    font-size:14px;
+    color:#73777a;
+}

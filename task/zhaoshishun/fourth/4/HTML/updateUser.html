@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改用户信息</title>
+<link rel="stylesheet" href="../CSS/public.css">
+</head>
+<body>
+   <!--开启session-->
+  <?php require_once '../../menu.php'; ?>
+<div class="header-2">
+            <img src="../images/ICON.png"></img>
+        </div>
+
+                    <!--表格-->
+                            <?php
+                                header("Content-Type: text/html;charset=utf-8");
+                                //建立连接
+                                 $conn = mysqli_connect('localhost','root','');
+                                //数据库连接成功
+                                $select = mysqli_select_db($conn,"kaohe4"); 
+
+    
+                                //执行查询   
+                                $sql="select * from user where username='{$_SESSION['username']}'"; 
+                                
+                                $result= mysqli_query($conn,$sql);
+                                $user=mysqli_fetch_assoc($result);
+                             ?>
+                 <div class="back"><img src="../images/henu3.png"></img>
+                        <div class="main">
+                       <form action = "../../updateUserAction.php?id=<?php echo $user['id'];?>" method = "post">
+                            
+                            <div class="username">用户名:<br><input type="text" name="username" value='<?php echo $user["username"];?>'></div> 
+                            <div class="password">旧密码:<br><input type="password" name="pre_password" ></div>
+                            <div class="password">新的密码:<br><input type="password" name="password" ></div>
+                            <div class="sub"><input type="submit" value="确认修改" name="subr"></div>
+                        </form>
+                    </div> 
+                </div>
+
+    <!--底部-->
+        <div class="footer">
+            <div class="footer-hr"></div>
+            <div class="content">
+                <pre>河南大学计算机与信息工程学院心理健康教育工作站  地址：河南大学计算机与信息工程学院101</pre>
+                <div class="span">电话：0371-23883169&nbsp;&nbsp;邮编：475000</div>
+            </div>
+        </div>
+                                        
+                               
+                           
+                
+</body>
+<style>
+.back{
+        position: relative;
+    }
+.back img{
+    width:100%;
+    height:750px;
+    
+    }
+.main{
+    position: absolute;
+    top:45%;
+    left:65%;
+    width:450px;
+    height:350px;
+    margin: auto;
+    margin-bottom: 50px;
+  
+}
+.username{
+     font-size: 17px;
+     color:rgba(57,164,219,0.9);
+}
+.username input{
+    width:300px;
+    height:30px;
+    margin-top: 3px;
+}
+.password{
+    font-size: 17px;
+    margin-top: 25px;
+    color:rgba(57,164,219,0.9);
+}
+.password input{
+    width:300px;
+    height:30px;
+    margin-top: 3px;
+}
+.sub{
+    margin-top: 33px;
+    width:100px;
+    
+}
+.sub input{
+    width:300px;
+    height:35px;
+    font-size: 18px;
+    letter-spacing: 7px;
+    background-color:rgba(57,164,219,0.7);
+    
+}
+.main a{
+    color:#fff;
+    font-size: 18px;
+    margin-left: 130px;
+    position: relative;
+    top:15px;
+}
+
+</style>
+<script type="text/javascript">
+  
+</script>
+</html>

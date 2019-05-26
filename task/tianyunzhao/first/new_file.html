@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<<meta charset="UTF-8">
+			<title>一个小网站</title>
+			<style>
+				* {
+					padding: 0;
+					margin: 0;
+				}
+					
+				input::-ms-clear,input::-ms-reveal {
+					display: none;
+				}
+				.head{
+					position: absolute;
+					top: 0;
+					width: 1920px;
+					height: 50px;
+					background: black;
+					border-bottom:5px solid #454B50;
+				}
+				.a {
+					width: 1100px;
+					height: 25px;
+					float: left;
+					position: absolute;
+					top: 10px;
+				}
+				
+				.b {
+					width: 200px;
+					height: 50px;
+					float: left;
+					position: absolute;
+					top: 2px;
+					left: 1120px;
+					color:  white;
+					border:2px #454B50 solid;
+				}
+				
+				.c {
+					width: 600px;
+					height: 15px;
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					text-align: right;
+					padding-bottom: 12px;
+				}
+				.middle {
+					position: relative;
+					top: 35px;
+					height: 660px;
+					width: 1920px;
+					background-image: url("back.jpg");
+					background-size: 100%;
+					/*border: solid red ;*/
+				}
+				.d{
+					line-height: 2em;
+					position:absolute;
+					top:200px;
+					left:470px;
+					
+				}
+				.biao{
+					background-color: white;
+					width:400px;
+					height:420px;
+					position:absolute;
+					top:100px;
+					right:450px;
+				}
+				h2{
+					position:absolute;
+					top:20px;
+					left:25px;
+					
+				}
+				.e{
+					width:350px;
+					height:40px;
+					position:absolute;
+					top:70px;
+					left:25px;
+					border: solid #B8B8B8;
+					border-width:1px;
+				}
+				.s{width:350px;
+					height:40px;
+					position:absolute;
+					top:140px;
+					left:25px;
+					border: solid #B8B8B8;
+					border-width:1px;
+					
+				}
+				.r{
+					width:350px;
+					height:40px;
+					position:absolute;
+					top:220px;
+					left:28px;
+					border:#00C1DE solid;
+					
+					background-color: #00C1DE;
+					
+				}
+				.t{position:absolute;
+					top:270px;
+					left:145px;
+					
+				}
+				.dibu{
+					position: relative;
+					
+					height: 320px;
+					width: 1920px;
+					background-color:#373D41;
+					background-size: 100%;
+				}
+				.p{position:absolute;
+					top:80px;
+					left:320px;
+					color:gray;
+					
+				}
+				.o{position:absolute;
+					top:140px;
+					left:320px;
+					color:gray;
+					size: 3px;}
+				.l{position:absolute;
+					top:220px;
+					left:320px;
+					color:gray;
+					size: 3px;}
+					
+				.piao{position:fixed;
+				     width:45px;
+				     height:160px;
+				     top:550px;
+				     right:17px;
+				     background-color: #00C1DE;
+				     text-align: center;
+				     color:white;
+				     font-size: 25px;
+				     padding-top: 0px;
+				       
+ 					
+				}
+			</style>
+	</head>
+
+	<body>
+		<div class="all">
+			<div class="head">
+				<div class="a"><img src="logo.png" width="150px"/></div>
+				<input class="b" type="text" value="搜索器 " style="background-color: #454B50;">
+				<img src="sousuo.png" style="width:20px;height;20px;position:absolute; top:19px;left:1300px;">
+				<div class="c">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="gw.png" style="width:30px;height:22px;position:absolute;right:370px;top:0px;">&nbsp&nbsp
+					<font color="white">购物车</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<font color="white">控制台</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<font color="white">文档</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<font color="white">备案</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<font color="white">邮箱</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<font color="white">注册</font>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="d">
+					<h1 class="q"><font color="white">开学Hi购季&nbsp上云低至5折</font></h1>
+					<p1><font color="white">多款云产品低至5折,助力惠普上云</font></p1><br>
+					<p2><font color="white">新购享满返,最高返卷7500元</font><p2><br>
+					<p3><font color="white">续费抽豪礼,iphoneXs等你拿</font><p3><br>
+					<p4><font color="white">上云组合套餐,一站式上云新体验</font><p4>
+				</div>
+				<div class="biao"><h2><b><font size="4px">密码登录</font></b></h2><br>
+				<input class="e" type="text" value="邮箱/会员名/8位ID" style="background-color: white;">
+				<input class="s" type="text" value="请输入登录密码" style="background-color: white;">
+				<input class="r" type="button" value="登录"style="text-align-last: center;">
+				<div class="t"><p>免费注册&nbsp&nbsp&nbsp忘记会员名&nbsp&nbsp&nbsp忘记密码</p></div>
+					
+				</div>
+			</div>
+			<div class="dibu"><div class="p"><h3>关于我们&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp法律声明及隐私权政策&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp廉正举报&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp联系我们&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp加入阿里云</h3>
+				</div>
+				<div class="o">
+					<p>阿里巴巴集团&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp淘宝网&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp天猫&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						聚划算&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						全球速卖通&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						阿里巴巴国际交易市场&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						1688&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						阿里妈妈&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						飞猪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						阿里云计算&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						AIOS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						阿里通信&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						万网&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						高德&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						高德&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						友盟&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						虾米&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						优酷&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						钉钉<br><br>
+					支付宝&nbsp&nbsp&nbsp&nbsp&nbsp&nbs达摩院</p>
+					
+				</div>
+				<div class="l">
+					<p>©&nbsp&nbsp2009-2019&nbsp&nbspAliyun.com&nbsp&nbsp版权所有ICO证:&nbsp&nbsp浙B2-20080101<br>
+					<img src="ba.png" style="width:30px;height:30px;" ><img src="gxb.gif"style="width:30px;height:30px">&nbsp&nbsp浙公网安备&nbsp&nbsp33010002000099号</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="piao">
+			<img src="zixun.png"style="width:45px;height:30px；position:absolute;top:5px;">
+			<p>姿询建议</p>
+			<p style="position: fixed;top: 629px;right: 33px; ">·</p>
+				
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,285 @@
+@charset "uft-8";
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.header{
+	width:100%;
+	height:800px;
+}
+.banner{
+	position: relative;
+	width:100%;
+	height:100%;
+	color:red;
+	background: url("../images/back.jpg") no-repeat center;
+	background-size:cover; 
+}
+.nav{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	background-color: rgba(28,35,39,0.5);
+	border-bottom:3px solid rgb(69,75,80);
+}
+.l-list{
+	float:left;
+	width:49px;
+	height:33px;
+	padding-top:17px;
+	border-right:1px solid rgb(69,75,80);
+}
+.three{
+	width:20px;
+	height:12px;
+	margin:auto;
+}
+.three span{
+	display:block;
+	width:20px;
+	height:2px;
+	background-color:white;
+}
+.three span + span{
+	margin-top:4px;
+}
+.l-list:hover{
+	background-color:#00c1de;
+}
+.m-list{
+	z-index:10;
+	position: absolute;
+	top:50px;
+	left:0;
+	width:0;
+	height:700px;
+	padding-top:10px ;
+	background-color: rgba(39,43,46,1);
+	overflow: hidden;
+	transition:width 0.5s;
+}
+.l-list:hover .m-list{
+	width:200px;
+}
+
+.m-list ul li{
+	width:200px;
+	height:40px;
+}
+.m-list ul a{
+	display:block;
+	padding:10px 20px 10px 20px;
+}
+.m-list li span{
+	display:inline-block;
+	height:20px;
+	width:80px;
+	line-height:20px;
+	font-size:15px;
+	color:#fff;
+}
+.m-list li i{
+	display:inline-block;
+	top:4px;
+	height:17px;
+	width:16px;
+	margin-left: 55px;
+	margin-top:3px;
+	background: url("../images/1.png") no-repeat;
+}
+.m-list ol{
+	width:200px;
+	margin-top:10px;
+	padding:0 20px 0 20px;
+	border-top:1px solid rgb(69,75,80);
+}
+.m-list ol li{
+	height:40px;
+
+}
+.m-list ol a{
+	display:inline-block;
+	padding:10px 0 10px 0;
+}
+.m-list ol span{
+	width:60px;
+}
+.m-list ol i{
+	top:2px;
+	background: url("../images/3.png") no-repeat;
+}
+.m-list li:hover span{
+	color:#00cede;
+
+}
+.m-list ul li:hover i{
+	background: url("../images/2.png") no-repeat ;
+}
+#logo a{
+	display: block;
+}
+#logo{
+	float:left;
+	width:100px;
+	height:35px;
+	padding:15px 0 0 10px;
+}
+.r-list{
+	float:right;
+	height:50px;
+}
+.r-list .menu{
+	float:right;
+	margin:0 15px 0 15px;
+}
+.r-list a{
+	display:inline-block;
+	height:50px;
+	line-height: 50px;
+	color:#fff;
+	font-size:14px;
+}
+.r-list .spe-menu img{
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.r-list .menu:hover a{
+	color:#00cede;
+}
+.r-list .al-menu:hover a{
+	color:#fff;
+}
+.r-list .al-menu{
+	position:relative;
+}
+.hidden-list{
+	z-index:10;
+	display: none;
+	position: absolute;
+	top:50px;
+	left:0;
+	width:190px;
+	padding:10px 5px 15px 15px;
+	background-color: #272b2f;
+}
+.hidden-list p{
+	float:left;
+	height:50px;
+}
+.hidden-list p + p{
+	margin-left:30px;
+}
+.menu .hidden-list p a{
+	display:block;
+	height:25px;
+	line-height: 25px;
+	color:#fff;
+	font-size: 14px;
+}
+.r-list .al-menu:hover .hidden-list{
+	display: block;
+}
+.menu .hidden-list p:hover a{
+	color:#00cede;
+}
+.input-con{
+	float:right;
+	position: relative;
+}
+.input-con input{
+	width:200px;
+	height:50px;
+	color:#fff;
+	font-size:14px;
+	text-indent: 15px;
+	box-shadow: none;
+	outline: none;
+	border:0 none;
+	background-color: rgba(71,77,82,0.5);
+	transition: width 0.5s;
+}
+.input-con i{
+	position: absolute;
+	top:16px;
+	right:15px;
+	cursor: pointer;
+}
+.input-con:hover  input{
+	width:300px;
+	outline:medium;
+	border:1px solid #00cede;
+}
+.middle-con{
+	position: absolute;
+	top:200px;
+	left:330px;
+}
+.middle-con h1{
+	color:#fff;
+	margin-bottom: 5px;
+}
+.middle-con .year-new li{
+	height:35px;
+	line-height: 35px;
+	color:#fff;
+	font-size:14px;
+}
+.information{
+	position: absolute;
+	top:130px;
+	right:330px;
+	width:312px;
+	height:312px;
+	padding:20px;
+	background-color: #fff;
+}
+.information > p{
+	height:30px;
+	line-height: 30px;
+	font-size: 16px;
+	color:#000;
+}
+.information input{
+	width:310px;
+	height:40px;
+	color:#9b9ea0;
+	font-size:14px;
+	text-indent: 10px;
+	box-shadow: none;
+	outline: none;
+	margin-top:18px;
+	border:1px solid #000;
+	background-color: #fff;
+	transition: width 0.5s;
+}
+
+.information .sign-in{
+	width:308px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color:#fff;
+	margin-top:18px;
+	cursor: pointer;
+	background-color:#00c1de; 
+}
+.information .problem a{
+	float:right;
+	display:block;
+	height:40px;
+	line-height: 40px;
+	font-size:14px;
+	color:#000;
+	margin-left:10px;
+}
+.information .problem a:hover{
+	color:#00c1de;
+}

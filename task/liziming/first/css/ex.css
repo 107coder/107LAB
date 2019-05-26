@@ -1,0 +1,48 @@
+body {
+    background-image:url('../img/back.jpg' );
+    background-size: 110%,100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+}
+#global{
+    
+}
+#image{
+    margin-left: 12px;
+    margin-top: 15px;
+    float: left;
+}
+input{
+    float: left;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.head input{
+    color: #fff;
+    display: block;
+    background-image: url('../img/sousuo.png');
+     /* no-repeat right; */
+    width: 200px;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: 620px;
+    background: gray;
+    padding: 0;
+    border: 0;
+}
+#gw{
+        margin-left: 100px;
+        margin-top: 15px;
+        float: left;
+}
+#headfont{
+    color: aliceblue;
+}
+hr{
+    margin: 0;
+}

@@ -1,0 +1,34 @@
+#content a{
+	color: #000000;	
+}
+#content a:hover{
+	color:#39A4DB;
+}
+#content{
+	width:70%;
+	height:600px;
+	margin:40px auto;
+}
+.title{
+	height:25px;
+	border-bottom:5px solid #39A4DB;
+}
+.title span,.title a{
+	float:left;
+}
+.main{
+	margin:25px auto;
+	font-size:18px
+}
+.main p,.main span{
+	height:30px;
+	line-height:30px;
+}
+input{
+	width: 200px;height: 18px;
+}
+button{
+	font-size:18px;
+	margin-top:15px;
+	cursor:pointer;
+}

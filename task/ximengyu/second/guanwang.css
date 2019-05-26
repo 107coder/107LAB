@@ -1,0 +1,400 @@
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td
+    {
+        margin:0;
+	    padding:0;
+        list-style: none;
+    }
+    #header{
+        width:1600px;
+        height:100px;
+        background-color: #F5AA02;
+        z-index: -1;
+    }
+    #logo{
+        position: absolute;
+        left:150px;
+        top:-8px;
+        width:300px;
+        height:150px;
+    }
+.sousuo{position: absolute;
+    left:900px;
+    top:40px;
+    background-color:#F5AA02;
+    width:150px;
+    height:30px;
+    color:grey;
+    border:1px solid #01ACB7;
+    border-radius: 15px;
+}
+.button{position: absolute;
+    left:1040px;
+    top:40px;
+    background-color: #01ACB7;
+    width:40px;
+    height:34px;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+.warp{
+    height:40px;
+    width:1600px;
+    position: absolute;
+    left:0;
+    top:100px;
+    background-color: #01ACB7;
+    z-index: -1;
+}
+.level1 menu{
+    margin-right: 170px;
+}
+.warp span{
+    cursor: pointer;
+    text-align: center;
+    color:white;
+}
+.warp ul{
+    text-align:center;
+    float: left;
+    width:100px;
+    background-color: #01ACB7;
+}
+.hide1{
+    display:none;
+}
+.menu{
+    cursor: pointer;
+}
+.list{
+    position: absolute;
+    left:350px;
+    top:0;
+}
+.content{
+    width:250px;
+    position: absolute;
+    left:1140px;
+    top:590px;
+    height:300px;
+}
+.content li{
+    color:black;
+    font-size:15px;
+    line-height:20px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size:13px;
+    line-height:30px;
+}
+h3{
+    height:40px;
+    cursor: pointer;
+    color:white;
+    background-color: #F5AA02;
+}
+
+
+
+
+
+
+
+.container{
+    width:1600px;
+    height:400px;
+    position: absolute;
+    left:0;
+    top:140px;
+    overflow: hidden;
+}
+.container img{
+    width:1600px;
+    height:400px;
+    z-index:-1;
+}
+.container ul li{
+    float:left;
+    z-index:-1;
+    width:1600px;
+}
+.container ul{
+    width:6400px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.container ol{
+    position: absolute;
+    top:370px;
+    left:680px;
+}
+.container ol li{
+    float: left;
+    width:30px;
+    height:15px;
+    line-height:15px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:grey;
+    color:grey;
+    margin-right:30px;
+}
+.container ol li .current{
+    cursor: pointer;
+    background-color: #F5AA02;
+}
+
+.left{
+    position: absolute;
+    top:40%;
+    left:0;
+    line-height:50px;
+    width:50px;
+    height: 60px;
+    cursor: pointer;
+}
+.rignt{
+    position: absolute;
+    top:60px;
+    left:100px;
+    line-height:50px;
+    width:50px;
+    height: 60px;
+    cursor: pointer;
+}
+.poem{
+    position: absolute;
+    left:200px;
+    top:560px;
+    width:450px;
+    height:300px;
+}
+.title ul{
+    overflow: hidden;
+}
+.title ul li{
+    float:left;
+    width:222px;
+    height:40px;
+    border:1px #F5AA02;
+    border-radius:12px 12px 0px 0px;
+    line-height:40px;
+    cursor: pointer;
+    color:white;
+    background-color: #F5AA02;
+    text-align: center;
+}
+.tabconcent div{
+    border:1px grey solid;
+   width:445px;
+   height:180px;
+}
+.tabconcent p{
+    font-size:14px;
+    line-height:30px;
+}
+._current{
+    background-color: #EC6B0E;
+    color:white;
+}
+.hide{
+    display:none;
+}
+.tabconcent span{
+    float:right;
+}
+.zoom{
+    width:450px;
+    height:80px;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+.picture  ul{
+    width:500px;
+    height:85px;
+    position: absolute;
+    left:700px;
+    top:750px;
+    _display:inline;
+}
+.picture ul li{
+    float:left;
+}
+.picture ul li img{
+    margin-right:5px;
+    width:98px;
+    height:80px;
+}
+.pcurrent{
+    border: 3px #EC6B0E solid;
+}
+.photo span{
+    position: relative;
+    bottom:30px;
+    margin-left:30px;
+    color:white;
+    font-size:13 px;
+}
+.photo{
+    border:4px #F5AA02 solid;
+    position: absolute;
+    top:570px;
+    left:715px;
+    width:380px;
+    height:150px;
+    border-radius: 10px;
+}
+.photo img{
+    height:150px;
+    width:380px;
+}
+.icon{
+    position: relative;
+    left:200px;
+    top:850px;
+    width:750px;
+    height:130px;
+    border:3px #F5AA02 solid;
+    overflow: hidden;
+}
+.icon img{
+    float:left;
+    margin:15px;
+    width:150px;
+    height:118px;
+}
+.icon ul{
+    overflow: hidden;
+    width:750px;
+    position: absolute;
+    left:0;
+    top:0;
+    _height:1px;
+}
+.icon ul li{
+    float:left;
+
+}
+.max{
+    width:500px;
+    height:400px;
+}
+.one{
+    position: absolute;
+    top:900px;
+    left:1000px;
+    width:330px;
+    height:80px;
+    cursor: pointer;
+}
+.one img{
+    float:left;
+    width:160px;
+    height:80px;
+    margin-right:5px;
+}
+.two{ 
+    cursor: pointer;
+    position: absolute;
+    top:990px;
+    left:1000px;
+    width:330px;
+    height:85px;
+}
+.two img{
+    float:left;
+    width:160px;
+    height:80px;
+    margin-right:5px;
+}
+.footer{
+    background-color: #F5AA02;
+    width:1700px;
+    height:150px;
+    position: absolute;
+   top:1120px;
+   left:0;
+}
+.footer img{
+    margin-top:20px;
+    margin-left:250px;
+    width:200px;
+    height:130px;
+}
+.tag {
+    position: absolute;
+    top:1150px;
+    left:900px;
+    width:400px;
+    height:120px;
+}
+#hideone{
+    width:400px;
+  display:none;
+
+}
+#hideone img{
+    width:400px;
+    height:300px;
+}
+#showone{
+    position: absolute;
+    left:1000px;
+    top:900px;
+    width:100px;
+    height:100px;
+}
+#showone img{
+    width:130px;
+    height:100px;
+}
+#hideone span{
+    float:right;
+    font-size:14px;
+    cursor: pointer;
+}
+#showtwo img{
+    width:130px;
+    height:100px;
+}
+#showthree img{
+    width:130px;
+    height:100px;
+}
+#showfour img{
+    width:130px;
+    height:100px;
+}
+#showtwo{
+    position: absolute;
+    left:1140px;
+    top:900px;
+    width:130px;
+    height:100px;
+}
+#showfour{
+    position: absolute;
+    left:1140px;
+    top:1000px;
+    width:100px;
+    height:100px;
+}
+#showthree{
+    position: absolute;
+    left:1000px;
+    top:1000px;
+    width:130px;
+    height:100px;
+}

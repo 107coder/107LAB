@@ -1,0 +1,406 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#blank{
+    background: #39A4DB;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    color: aliceblue;
+    font-family:"Times New Roman",Times,serif;
+}
+#blank p{
+    margin: 0;
+    cursor: pointer;
+}
+#tex{
+    height: 32px;
+    width: 140px;
+    margin-left: 1140px;
+    font-size: 14px;
+}
+
+#title{
+    width: 100%;
+    height: 100px;
+}
+#title img{
+    margin-left:15%;
+    margin-top: 15px;
+    height: 66px;
+}
+#menu{
+    background: #39A4DB;
+    width: 100%;
+    height: 45px;
+    font-family:"Times New Roman",Times,serif;
+}
+#menu1{
+    background: #39A4DB;
+    width: 80%;
+    height: 45px;
+    margin-left: 8%;
+}
+#menu1 li {
+    cursor: pointer;
+}
+#menu li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    width: 10%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #39A4DB;
+    font-family:"Times New Roman",Times,serif;
+}
+#menua0:hover,#menub0:hover,
+#menuc0:hover,#menud0:hover,
+#menue0:hover,#menuf0:hover,
+#menug0:hover,#menuh0:hover,
+#menui0:hover,#menuj0:hover{
+    background: #3C93ED;
+}
+#menua li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menua0 ul{
+    display: none;
+}
+#menub li{
+    background: #39a4db;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menub0 ul{
+    display: none;
+}
+#menuc li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menuc0 ul{
+    display: none;
+}
+#menud li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menud0 ul{
+    display: none;
+}
+#menue li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menue0 ul{
+    display: none;
+}
+#menuf li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menuf0 ul{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+.box {
+    width: 1519px;
+    height: 500px;
+    padding: 0;
+    z-index: -2;
+}
+.inner{
+    width: 1519px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.inner img{
+    width: 1519px;
+    height: 500px;
+    vertical-align: top;
+    z-index: -2;
+}
+.inner ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top: 0;
+    z-index: -2;
+}
+.inner ul li{
+    float: left;
+    z-index: -2;
+}
+
+ol {
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 5px;
+}
+ol li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+ol .current{
+    background-color: red;
+}
+#arr{
+    display: none;
+}
+#arr span{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+#news{
+    width:1080px;
+    height:310px;
+    margin:10px auto;
+    padding:10px 0;
+    border-top: 5px solid #39A4DB;
+} 
+
+.im{
+    width:400px;
+    height:300px;
+    padding: 0;
+    margin-left:15px;
+    margin-top:10px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+} 
+
+.a{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.a img{
+    width: 400px;
+    height: 300px;
+    vertical-align: top
+}
+.a ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top: 0;
+}
+.a ul li{
+    float: left;
+}
+#xw{
+    width:625px;
+    height:300px;
+    float:left;
+    margin-left:20px;
+    margin-top:10px;
+}
+#tit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 20px;
+}
+#line{
+    background: #3C93ED;
+    height: 3px;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+#tab0{
+    width: 1060px;
+    height: 250px;
+    margin: auto;
+}
+#tab1{
+    float: left;
+    width: 285px;
+    height: 250px;
+    margin-right: 15px;
+}
+#tab2{
+    float: left;
+    width: 460px;
+    height: 250px;
+}
+#tab3{
+    float: left;
+    width: 285px;
+    height: 250px;
+    margin-left: 15px;
+}
+#bottom{
+    width: 1000%;
+    height: 5px;
+    background: #CCCCCC;
+    margin-top: 30px;
+}
+#tel li{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+}
+#blank{
+    width: 100%;
+    height: 10px;
+    background: white;
+}
+#float{
+    background: blue;
+    width: 400px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 200px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 3;
+    font-size: 40px;
+    text-align: center;
+}
+#to_top
+{
+    position: fixed;
+    padding: 0px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 40px;
+    text-align: center;
+    height: 45px;
+    z-index: 6;
+    right:5%;;
+    top: 600px;
+    background: #ccc;
+}
+#to_top:hover
+{
+    color: #39A4DB;
+}
+.tab
+{
+    width: 460px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+.tab-title
+{
+    list-style-type: none;
+    float: left;
+    padding: 0%;
+    border-bottom: 3px solid #39A4DB;
+}
+.tab-title li
+{
+
+    float: left;
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    line-height: 45px;
+}
+.tab-click
+{
+    background: #39A4DB;
+    border-radius: 10px;
+}
+.tab-content
+{
+    float: left;
+    height: 210px;
+}
+.tab-content ul
+{
+    list-style-type: none;
+    height: 200px;
+}
+.tab-content ul li
+{
+    margin-top: 10px;
+}
+.tab-content ul li a
+{
+    text-decoration: none;
+    color: black
+}
+.tab-content ul li a:hover
+{
+    color: #39A4DB;
+}
+.tab-content ul li img
+{
+    width: 20px;
+    height: 25px;
+}
+#jianjie{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+}
+#head{
+    text-align: center;
+    font-size: 45px;
+}

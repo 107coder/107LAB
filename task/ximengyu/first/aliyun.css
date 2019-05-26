@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+#background{
+	background: url('img/back.jpg') no-repeat;
+	width:1600px;
+	height:500px;
+}  
+#logo{
+	  position: absolute;
+	left:0;
+	top:0;
+	width:70px;
+	height:22px;}
+	 
+#service{
+	position: absolute;
+	left:850px;
+	top:0;
+	width:200px;
+	height:30px;
+	font-size:11px;
+  line-height:30px;
+	background-color:#373D41;
+	color: white;
+}
+#sousuo{
+	width:18px;
+	height:18px;
+	position: relative;
+	bottom:27px;
+	left:170px;
+}
+
+#gw{
+	position: absolute;
+	top:0;
+	right: 20px;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+#shop{
+	width: 17px;
+	height: 17px;
+}
+#hr{
+	position: absolute;
+	height: 3px;
+	width:1600px;
+	top:30px;
+	background-color:#373D41;
+}
+#timu{position: absolute;
+	left:300px;
+	top: 200px;
+	color: white;
+}
+.wenzi{
+  line-height: 200%;
+}
+#table{
+	position: absolute;
+	top:150px;
+	left:900px;
+	width:290px;
+	height:290px;
+	background-color:white;
+}
+#table_margin{
+	margin-top:18px;
+	margin-left: 15px;
+}
+#table input{
+	border:2px #9B9EA0 solid;
+	width:250px;
+	height:30px;
+	font-size: 10px;
+	color:#9B9EA0;
+}
+#text{
+	margin-top: 15px;	
+}
+#table p{
+	margin-bottom:30px;
+}
+#table span{
+	position: relative;
+	top: 20px;
+	color: white;
+	padding: 10px 110px;
+	background-color:#00C1DE ;
+}
+span{
+   font-size:15px;
+   line-height: 30px;
+}
+#tag{
+	color:#9B9EA0;
+	font-size:10px;
+	position: relative;
+	left:110px;
+	top:30px;
+}
+#bottom{
+	bottom:0;
+	height:300px;
+	width:1600px;
+	background-color:#373D41;
+}
+#aliyun{
+	position: absolute;
+	left:150px;
+	top:550px;
+	
+}
+.big{
+	color:#9B9EA0;
+	font-size:16px;
+	margin-bottom: 20px;
+}
+.big li{
+	float: left;
+	margin-right: 20px;
+	height: 20px;
+
+}
+ul .small{
+	color: #73777A;
+	float:left;	
+	font-size: 13px;
+}
+.small li{
+	float:left;	
+	color: #73777A;
+	font-size: 13px;
+	margin-right:20px;
+	height:20px;
+}
+#ba{
+	float:left;
+	width:20px;
+	height: 20px;
+}
+#gxb{
+	float:left;
+	width:20px;
+	height: 20px;
+}
+#sidebar{
+	position: fixed;
+	left:1430px;
+	top:450px;
+	background-color: #00C1DE;
+	width:30px;
+	height:150px;
+	font-size: 17px;
+	color:white;
+	text-align: center;
+}
+#zixun{
+	width:30px;
+	height:20px;
+}

@@ -1,0 +1,18 @@
+.content div {
+    width: 892px;
+    height: 470px;
+    margin: 20px auto;
+}    
+.content div h2 {
+    text-align: center;
+}
+.content div p {
+    margin-top: 15px;
+    line-height: 20px;
+}
+.content div ol {
+    margin-top: 20px;
+}
+.content div ol li {
+    line-height: 30px;
+}

@@ -1,0 +1,22 @@
+
+
+.download-main{
+	width:1000px;
+	height:450px;
+	margin:0 auto;
+	
+}
+.download-position{
+	margin-top:35px;
+	font-size:17px;
+}
+.download-hr{
+	width:1000px;
+	height:6px;
+	background-color:rgb(57,164,219);
+	margin-top:15px;
+}
+.download-main ul li{
+	list-style:none;
+	margin-top:13px;
+}

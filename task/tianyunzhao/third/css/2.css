@@ -1,0 +1,145 @@
+*{
+	padding 0px;
+	margin: 0px;
+	list-style:none;
+	text-decoration: none;
+	margin: 0 auto;
+	
+}
+#shoduan{
+	width:100%;
+	height:30px;
+	background:#39A4DB;
+	margin:0 auto;
+	top:0px;
+	margin: 0px;
+	}
+#wenzi{
+	width:80px;
+	height:30px;
+	position:absolute;
+	right:300px;
+	top:5px;
+	color:#ffffff;
+	text-align:center;
+	
+	}
+#shoduan2{
+	width:100%;
+	height:110px;
+	
+}
+.caidan{
+    width: 100%;
+    height: 60px;
+    background-color:#39A4DB;
+    position: absolute;   
+    z-index: 20;
+    margin: 0 auto;
+}
+
+.caidan1{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    position:absolute;
+    left:50px;
+}
+
+
+.caidan1 ul li {
+    color: #fff;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    float: left; 
+    width: 140px;
+    height: 60px;
+      
+    cursor: pointer;
+    z-index: 200px;
+   
+}
+
+.caidan1 ul li:hover{
+    background-color: #3C93ED;
+}
+.dang1 a:hover{
+	color: #3C93ED;
+}
+.caidan1 a{
+    color: #fff;
+}
+.dang a{
+	color:#000000;
+}
+.dang1 a{
+	color:#000000;
+}
+.cai ol{
+    display:none;
+    background-color: #39A4DB;
+    box-shadow:3px 3px 3px #000;
+    position:relative;
+   
+   
+    
+}
+
+.cai ol li {
+    float: none;
+    width: 140px;
+    font-size: 20px;   
+    border-bottom: 1px solid #000; 
+    position:relative;
+    left:-40px;
+}
+
+.cai ol li a{
+    color: #fff;
+}
+.cai{
+	width:140px;
+	height:60px;
+}
+.wenben{
+	width:1120px;
+	height:550px;
+	position:absolute;
+	top:260px;
+	left:240px;
+	
+}
+.lun li{
+	margin: 15px auto;
+	 list-style: decimal;
+}
+.dang1 li{
+	margin: 20px auto;
+}
+.ooo{
+	width: 1320px;
+	height: 160px;
+	margin: 20px auto;
+	/*border-top: 5px solid #39A4DB; */
+	position:relative;
+	left:-210px;
+	top:0px;
+}
+.ooo  h1{
+	font-size: 24px;
+	text-align: center;
+	margin: 15px auto;
+}
+.ooo p{
+	margin: 0 100px;
+	font-size: 20px;
+}
+#fdck {
+	border:1px solid #c0c0c0;
+	margin:0 auto;
+	padding:5px;
+	background-color:#ED7D31;
+	z-index:999;
+}

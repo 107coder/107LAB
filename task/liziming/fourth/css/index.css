@@ -1,0 +1,514 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+#blank{
+    background: #39A4DB;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    color: aliceblue;
+    font-family:"Times New Roman",Times,serif;
+    z-index: 100;
+}
+#blank p{
+    margin: 0;
+    cursor: pointer;
+}
+#tex{
+    height: 32px;
+    width: 280px;
+    margin-left: 1140px;
+    font-size: 14px;
+}
+#tex a{
+	font-size: 15px;
+	color: white;
+}
+#float
+{
+    position: absolute;
+    z-index: 100000;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: blueviolet;
+    top: 0px;
+    left: 0px;
+}
+#title{
+    width: 100%;
+    height: 100px;
+}
+#title img{
+    margin-left:15%;
+    margin-top: 15px;
+    height: 66px;
+}
+#menu{
+    background: #39A4DB;
+    width: 100%;
+    height: 45px;
+    font-family:"Times New Roman",Times,serif;
+    z-index: 9999;
+    position: relative;
+
+}
+#menu1{
+    background: #39A4DB;
+    width: 80%;
+    height: 45px;
+    margin-left: 8%;
+    z-index: 2;
+}
+
+#menu1 li {
+    cursor: pointer;
+}
+#menu li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    width: 10%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #39A4DB;
+    font-family:"Times New Roman",Times,serif;
+}
+#menua0:hover,#menub0:hover,
+#menuc0:hover,#menud0:hover,
+#menue0:hover,#menuf0:hover,
+#menug0:hover,#menuh0:hover,
+#menui0:hover,#menuj0:hover{
+    background: #3C93ED;
+}
+#menua li
+{
+    z-index: 9999;
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+    
+}
+#menua li:hover,
+#menub li:hover,
+#menuc li:hover,
+#menud li:hover,
+#menue li:hover,
+#menuf li:hover
+{
+    background: #3C93ED;
+}
+#menua a,#menua0 a,#menug0 a,
+#menub a,#menub0 a,#menuc a,#menuc0 a,
+#menud a,#menud0 a,#menue a,#menue0 a,
+#menuf a,#menuf0 a,#menuh0 a,#menui0 a,#menuj0 a
+{
+    color: aliceblue;
+    font-weight: bold;
+}
+#menua0 ul{
+    display: none;
+    z-index: 9999;
+}
+#menub li{
+    background: #39a4db;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menub0 ul{
+    display: none;
+}
+#menuc li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menuc0 ul{
+    display: none;
+}
+#menud li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menud0 ul{
+    display: none;
+}
+#menue li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menue0 ul{
+    display: none;
+}
+#menuf li{
+    background: #39A4DB;
+    float: left !important;
+    width: 100%;
+    border-bottom:1px solid #3C93ED;
+}
+#menuf0 ul{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+* {
+    margin: 0;
+    padding: 0
+}
+
+.box {
+    width: 1519px;
+    height: 500px;
+}
+
+.inner {
+    width: 1519px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner img {
+    width: 1519px;
+    height: 500px;
+    vertical-align: top
+}
+
+.inner ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: 0;
+}
+
+.inner li {
+    float: left;
+}
+
+ol {
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+ol li {
+    text-decoration: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+ol .current {
+    background-color: red;
+}
+
+#arr {
+    display: none;
+}
+
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+#news{
+    width:1080px;
+    height:310px;
+    margin:10px auto;
+    padding:10px 0;
+    border-top: 5px solid #39A4DB;
+} 
+
+.li_img img {
+    width: 400px;
+    height: 300px;
+}
+
+.li_img {
+    width: 400px;
+    height: 300px;
+    float: left;
+    list-style: none;
+}
+
+.ul_img {
+    width: 6000px;
+    padding: 0px;
+    margin: 0px;
+    transition: all 2s;
+}
+
+#main_div {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    border: 1px solid #000000;
+    cursor: pointer;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+}
+
+#movebox {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 303.75px;
+    height: 303.75px;
+    background: yellow;
+    z-index: 100;
+}
+
+#smallimg1 {
+    height: 450px;
+    width: 450px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+#bigimg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#what {
+    display: none;
+    height: 540px;
+    width: 540px;
+    overflow: hidden;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+}
+#smallimg li {
+    list-style-type: none;
+}
+
+.div_btn {
+    float: left;
+    background-color: white;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.div_btn:hover {
+    background-color: aqua;            
+}
+.posi{
+    margin-top: 260px;
+    margin-left: 320px;
+    position: absolute;
+    z-index: 99;
+    background: #000;
+    height: 22px;
+    width: 44px;
+}
+#xw{
+    width:625px;
+    height:300px;
+    float:left;
+    margin-left:20px;
+}
+#tit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 20px;
+}
+#line{
+    background: #3C93ED;
+    height: 3px;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+#tab0{
+    width: 1060px;
+    height: 250px;
+    margin: auto;
+}
+#tab1{
+    float: left;
+    width: 285px;
+    height: 250px;
+    margin-right: 15px;
+}
+#tab2{
+    float: left;
+    width: 460px;
+    height: 250px;
+}
+#tab3{
+    float: left;
+    width: 285px;
+    height: 250px;
+    margin-left: 15px;
+}
+#bottom{
+    width: 100%;
+    height: 5px;
+    background: #CCCCCC;
+    margin-top: 30px;
+}
+#tel li{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+}
+#blank1{
+    width: 100%;
+    height: 10px;
+    background: white;
+}
+.tab
+{
+    width: 460px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+.tab-title
+{
+    list-style-type: none;
+    float: left;
+    padding: 0%;
+    border-bottom: 3px solid #39A4DB;
+}
+.tab-title li
+{
+
+    float: left;
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    line-height: 45px;
+}
+.tab-click
+{
+    background: #39A4DB;
+    border-radius: 10px;
+}
+.tab-content
+{
+    float: left;
+    height: 210px;
+}
+.tab-content ul
+{
+    list-style-type: none;
+    height: 200px;
+}
+.tab-content ul li
+{
+    margin-top: 10px;
+}
+.tab-content ul li a
+{
+    text-decoration: none;
+    color: black
+}
+.tab-content ul li a:hover
+{
+    color: #39A4DB;
+}
+.tab-content ul li img
+{
+    width: 20px;
+    height: 25px;
+}
+#jianjie{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+#head{
+    text-align: center;
+    font-size: 45px;
+    z-index: 1;
+}
+#totp{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid;
+    background: gold;
+    margin-left: 1200px;
+    margin-bottom: 30px;
+}
+#abc{
+    width: 100%;
+    height: 4px;
+    background: #39a4db;
+    margin-top: 20px;
+}
+#news9{
+    width: 700px;
+    height: 320px;
+    float: right;
+    line-height: 43px;
+}
+table{
+    width: auto;
+}
+#biu{
+    margin-left: 5px;
+    float: right;
+    display: block;
+}

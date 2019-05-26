@@ -1,0 +1,42 @@
+.nowposition {
+    width: 1000px;
+    margin: 40px auto -5px auto;
+}
+.midlle-line {
+    width: 1000px;
+    height: 5px;
+    background-color: #39A4DB;
+    margin: 15px auto 0 auto;
+}
+.content {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+.content>div {
+    float: left;
+}
+.content-list {
+    width: 650px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.turnpage {
+    float: right;
+    width: 230px;
+    margin-top: 50px;
+}
+.turnpage input {
+    width: 50px;
+}
+.turnpage button, .turnpage input{
+    font-size: 17px;
+}
+.content-list ul li img {
+    width: 16px;
+    height: 16px;
+}
+.content-list ul li {
+    line-height: 33px;
+    cursor: pointer;
+}
