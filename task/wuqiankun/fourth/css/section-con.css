@@ -1,0 +1,51 @@
+@charset "utf-8";
+body{
+    height:820px;
+}
+
+/*跳转页内容*/
+section{
+    height:520px;
+    padding-left:0px;
+    border-top:6px solid #39a4db;
+}
+section .big-content{
+    width:885px;
+    margin:0 auto;
+}
+.big-content > div{
+    width:885px;
+}
+.big-content .brief{
+    margin-bottom: 20px;
+}
+.big-content .brief h6{
+    width: 885px;
+    height:58px;
+    line-height: 58px;
+    text-align: center;
+    color:#000;
+    font-size:24px;
+}
+.big-content .brief p{
+    width:885px;
+    white-space: pre-wrap;
+    font-size: 16px;
+    color:#000;
+}
+.big-content .detail-con p{
+    font-size: 16px;
+    color:#000;
+}
+.big-content .detail-con ol{
+    list-style-type:decimal;
+}
+.big-content .detail-con li{
+    width:868px;
+    height:30px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#000;
+    margin-left:18px;
+    white-space: pre-wrap;
+}

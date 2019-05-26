@@ -1,0 +1,44 @@
+@charset "utf-8";
+aside{
+    position: fixed;
+    bottom: 125px;
+    right:10px;
+    width:40px;
+    height:146px;
+}
+
+/*返回顶部*/
+
+aside .arrow{
+  opacity: 0;
+}
+aside .arrow a{
+    width:40px;
+    height:40px;
+    background-color: #e3e5e6;
+    background: url("../images/arrow.png") no-repeat;
+}
+aside .arrow a:hover{
+    background: url("../images/3ding.png") no-repeat;
+}
+aside .arrow-bot{
+    width:38px;
+    height:84px;
+    padding-top:7px;
+    margin-top:0px;
+    border:1px solid #e3e5e6;
+    cursor: pointer;
+}
+aside div a{
+    display: inline-block;
+}
+aside .arrow-bot p{
+    white-space: pre-wrap;
+    width:20px;
+    margin:0 auto;
+    text-align: center;
+}
+aside .arrow-bot a{
+    color:#8b8b8b;
+    font-size:14px;
+}

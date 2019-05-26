@@ -1,0 +1,239 @@
+@charset "utf-8";
+section{
+	width:1215px;
+	height:520px;
+	margin:auto;
+	
+}
+section .top-case{
+	width:100%;
+	height:305px;
+	margin-bottom: 15px;
+}
+.top-case .poem{
+	z-index: 1;
+	float: left;
+	position: relative;
+	width:494px;
+	height:305px;
+	background-color: #fff;
+	box-shadow: 3px 3px 15px 3px #666;
+	border-radius:20px 20px 0 0; 
+	overflow: hidden;
+}
+.top-case .poem .topic{
+	height:50px;
+}
+.poem .topic p{
+	float: left;
+	width:247px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+	cursor: pointer;
+	background-color: rgb(245,170,2);
+	border-radius:20px 0 0 0;
+}
+.poem .topic .poem-right{
+	border-radius:0 20px 0 0;
+}
+.poem .topic .chan-co{
+	background-color: rgb(236,107,14);
+}
+.poem .content{
+	z-index: 1;
+	position: absolute;
+	top:50px;
+	left:0;
+	width:494px;
+}
+.poem .content li{
+	width:494px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: #fff;
+	padding-top: 10px;
+}
+.poem .content p{
+	position: relative;
+	width:474px;
+	height:40px;
+	line-height: 40px;
+	font-size: 16px;
+	color:#000;
+	cursor: pointer;
+	padding:0 10px 0 10px;
+}
+.poem .content p:hover{
+	color:red;
+}
+.poem .content p span{
+	position: absolute;
+	top:1px;
+	right:10px;
+	font-size: 16px;
+}
+.top-case .m-pic{
+	float: left;
+	width:398px;
+	height:305px; 
+	margin:0 13px 0 18px;
+}
+.m-pic .big-img{
+	position: relative;
+	width:386px;
+	height:216px;
+	border:6px solid rgb(245,170,2);
+	border-radius: 10px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+.big-img .cycle li{
+	float: left;
+}
+.big-img .cycle{
+	position: absolute;
+	top:0;
+	left:0;
+	width:400%;
+	height:100%;
+}
+.big-img .text-bot{
+	position: absolute;
+	bottom: 6px;
+	left:0;
+	width:360px;
+	height:30px;
+	font-size: 16px;
+	color:#fff;
+	line-height: 30px;
+	padding-left: 26px;
+	background-color: rgba(89,62,32,0.5);
+}
+.small-img .same{
+	float: left;
+	position: relative;
+	width:84px;
+	height:55px;
+	border:5px solid #ccc;
+	cursor: pointer;
+}
+.small-img .yellow{
+	border:5px solid #ec6b0e;
+}
+.small-img .yellow:after{
+	content:"";
+    position: absolute;
+    top:-10px;
+    left:50%;
+    width: 0;
+    height: 0;
+    border:5px solid #fff;
+    border-top: 0;
+    border-bottom-color:#ec6b0e;
+    margin-left: -2.5px;
+    background-color: #fff;
+}
+.small-img li+li{
+	margin-left: 6px;
+}
+.top-case .poetry{
+	float: left;
+	width:285px;
+	border:3px solid #f5aa02;
+}
+.poetry .p-title{
+	width:265px;
+	height:40px;
+	line-height: 40px;
+	color:#fff;
+	font-size: 22px;
+	background-color: #f5aa02;
+	padding-left:20px;
+	cursor: pointer;
+}
+.poetry .verse li{
+	width:275px;
+	height:40px;
+	line-height: 40px;
+	font-size:15px;
+	color:#000;
+	margin-top:6px;
+	background-color: #fff;
+	padding-left:10px;
+}
+.poetry .verse{
+	display: none;
+}
+.poetry .spe-verse{
+	display: block;
+}
+.poetry .spe-color{
+	background-color: #ec6b0e;
+}
+.bottom-case{
+	width:1205px;
+	height:200px;
+	padding-left:10px;
+	box-shadow:0 0 30px 1px #666 ;
+}
+.bottom-case .box-pic{
+	position: relative;
+	float: left;
+	width:838px;
+	height:140px;
+	border:3px solid #ec6b0e;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.box-pic .case-pic{
+	position: absolute;
+	top:0;
+	left:0;
+	width:2520px;
+	height:140px;
+	background-color: #fff;
+}
+.box-pic .case-pic li{
+	float: left;
+	margin:0 12px 0;
+}
+.bottom-case .box-pic i{
+	display: block;
+	width:20px;
+	height:40px;
+	position: absolute;
+	cursor: pointer;
+	background:url("../images/prev_next.png") no-repeat;
+}
+.bottom-case .box-pic .l-arrow{
+	top:50px;
+	left:14px;
+	background-position: 0 -66px;
+}
+.bottom-case .box-pic .r-arrow{
+	top:50px; 
+	right:14px;
+	background-position: -10px -6px;
+}
+.bottom-case .dog-img{
+	float: left;
+	width:345px;
+	height:146px;
+	margin-left:11px; 
+	background-color: #fff;
+}
+.dog-img .top-dog div{
+	float: left;
+	margin:4px;
+	cursor: pointer;
+}
+.dog-img .bot-dog div{
+	float: left;
+	margin:4px;
+	cursor: pointer;
+}

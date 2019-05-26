@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="关键字">
+<meta name="Description" content="描述">
+    <title>107工作室-武乾坤</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <script src="./js-jquire/jquery-3.3.1.min.js"></script>
+    <script src="./js-jquire/107max.js"></script>
+    <style>
+    </style>
+    <?php
+    define("HOST","localhost");
+    define("USER","root");
+    define("PASSWORD","");
+    define("DBNAME","newsdb");
+    ?>
+</head>
+<body>
+    <!--悬浮窗口-->
+    <div id="mobile">
+        <p>107实验室</p>
+        <p>我路风尘</p>
+    </div>
+
+    <!--主页头部-->
+    <header>
+        <!--锚点-->
+        <p id="tar"></p>
+        <!--导航栏-->
+        <div class="nav-top">
+            <div class="nav-bt">
+                <div class="home_page">
+                    <a href="">设为首页</a>
+                </div>
+                <div class="mid-line">
+                    <a href="#">|</a>
+                </div>
+                <div class="collection">
+                    <a href="">加入收藏</a>
+                </div>
+                <a href="" class="regiter">
+                    <?php
+                        session_start();
+                        if(empty($_COOKIE['username'])&&empty($_COOKIE['password'])){
+                            if(isset($_SESSION['username']))
+                                echo "<a  class=\"userinformation\" href=\"\">登录成功，欢迎您
+                                        <a href=\"./pHp/manage-admin/orgadmins/userInformation.php \" >登录用户的个人信息</a>
+                                    </a>".$_SESSION['username'];
+                            else
+                                echo "<a href='pHp/regiter/login.php'>登录</a>";
+                        }
+                        else
+                            echo "登录成功，欢迎您：".$_COOKIE['username'];
+
+                    ?>
+                
+                </a>
+                <a href="pHp/sign_in/register.php" class="sign_in">注册</a>
+            </div>
+        </div>
+        <!--logo图片-->
+        <div id="logo">
+            <a href="#">
+                <img src="images/ICON.png">
+            </a>
+        </div>
+        <!--下拉菜单-->
+        <div class="nav-list">
+            <div class="menu">
+                <ol>
+                    <li class="nav-menu current spe-nav">
+                        <a href="#">首页</a>
+
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">关于我们</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="./107-con.html">中心简介</a>
+                            </li>
+                            <li>
+                                <a href="#">服务内容</a>
+                            </li>
+                            <li>
+                                <a href="#">师资队伍</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="./107-news.html">新闻公告</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">中心动态</a>
+                            </li>
+                            <li>
+                                <a href="#">学院风采</a>
+                            </li>
+                            <li>
+                                <a href="#">朋辈成长</a>
+                            </li>
+                            <li>
+                                <a href="#">教师园地</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理百科</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">心理常识</a>
+                            </li>
+                            <li>
+                                <a href="#">最新发现</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理保健</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">性感美文</a>
+                            </li>
+                            <li>
+                                <a href="#">开心一刻</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理咨询</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">咨询常识</a>
+                            </li>
+                            <li>
+                                <a href="#">药品指南</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理测评</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">心理普查</a>
+                            </li>
+                            <li>
+                                <a href="#">趣味检测</a>
+                            </li>
+                            <li>
+                                <a href="#">专业问卷</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu"><a href="#">专题活动</a></li>
+                    <li class="nav-menu"><a href="#">下载中心</a></li>
+                    <li class="nav-menu"> <a href="#">我要留言</a></li>
+                </ol> 
+            </div>
+        </div>
+        <!--轮播图-->
+        <div class="banner">
+            <ul class="picture">
+                <li class="pic1">
+                    <img src="images/image1.jpg">
+                </li>
+                <li class="pic2">
+                    <img src="images/image2.jpg">
+                </li>
+                <li class="pic3">
+                    <img src="images/image3.jpg">
+                </li>
+                <li class="pic4">
+                    <img src="images/image4.jpg">
+                </li>
+                <li class="pic1">
+                        <img src="images/image1.jpg">
+                    </li>
+            </ul>
+            <!--左右切换按钮-->
+            <i class="prev">
+                <img src="images/prev.png">
+            </i>
+            <i class="next">
+                <img src="images/next.png">
+            </i>
+            <!--点击圆点-->
+            <div class="box-bottom">
+                <span class="on"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn "></span>
+                <span class="btn "></span>
+            </div> 
+        </div>
+
+    </header>
+    <!--中心内容-->
+    <section>
+        <!--中心内容的上面部分-->
+        <div class="content-top">
+            <!--淡入淡出-->
+            <div class="box-pic">
+                <ul class="pic">
+                    <li><a href="1"><img src="images/news_image1.jpg" alt="" ></a></li>
+                    <li><a href="2"><img src="images/news_image2.jpg" alt="" ></a></li>
+                </ul>
+                <div class="small-ico">
+                    <span class="spe-color">1</span>
+                    <span>2</span>
+                </div>
+            </div>
+            <!--新闻部分-->
+            <div class="news-bull">
+                <h6><a href="./107-news.html">新闻公告</a></h6>
+                <ul class="news-con">
+                    <?php
+                    $n = 0;
+                    $link = @mysqli_connect(HOST,USER,PASSWORD) or die("数据库连接失败！");
+                    mysqli_select_db($link,"newsdb");
+                    mysqli_set_charset($link, "utf8");
+                    $sql = "select news_title from news order by top desc,puttime desc";
+                    $result = mysqli_query($link,$sql);
+                    while($row = mysqli_fetch_array($result)){
+                        $n++;
+                    echo "<li>
+                            <a href=\"107-news-con.html\">{$row['news_title']}
+                                <img width=\"26px\" src=\"images/hot.gif\">
+                            </a>
+                            <img src=\"images/list_icon.png\">
+                        </li>";
+                        if($n > 7) break;
+                   }
+                    
+                    
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <!--中心内容的下面部分-->
+        <div class="content-bottom">
+            <!--第一部分-->
+            <div class="bot-first">
+                <h6><a href="./107-con.html">中心简介</a></h6>
+                <!--“详情”点击跳转-->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 计算机与信息工程学院心理健康教育工作站始建于2015年3月，在学院101办公室，占地面积50平方米。工作站领导小组由学院党委副书记、各年级辅导员、年级朋辈辅导员组成。工作站宗旨以增强学生的心理素质为目的，以普及心理健康知识...<a href="./107-con.html">详情</a>
+                    
+                </p>
+            </div>
+            <!--第二部分tab标签页-->
+            <div class="bot-two">
+                <div class="title">
+                    <ul>
+                        <li class="color-spe">
+                            <a href="#">心理百科</a>
+                        </li>
+                        <li>
+                            <a href="#">心理保健</a>
+                        </li>
+                        <li>
+                            <a href="#">心理咨询</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tit-con">
+                    <ul class="tit-one ">
+                        <li><img src="images/list_tabicon.png"><a href="#">春季常见十种异常心理</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">一张图分清抑郁症和抑郁情绪</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">无论你说什么都会否定你的人，都是什么心态？</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">焦虑的本质是对失控的恐惧 | 如何克服你的焦虑？</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">失眠的背后，也许是对关系的渴望</a></li>
+                    </ul>
+                    <ul class="tit-two hide">
+                        <li><img src="images/list_tabicon.png"><a href="#">百合花开</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">愿你纵马天涯，归来仍满身豪情</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">爱，是遥远而咫尺的距离（散文诗）</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">有一种幸福叫“平平安安”</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">认识自己和他人 </a></li>
+                    </ul>
+                    <ul class="tit-three hide">
+                        <li><img src="images/list_tabicon.png"><a href="#">心理咨询的过程</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">心理咨询的分类和形式</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">心理咨询与心理治疗的关系</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">心理咨询与治疗的注意事项</a></li>
+                        <li><img src="images/list_tabicon.png"><a href="#">心理疾病的药物常识及其注意事项</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--第三部分-->
+            <div class="bot-three news-bull">
+                <h6><a href="#">下载中心</a></h6>
+                <ul class="news-con">
+                    <li>
+                        <a href="#">初始转介记录单(转介至心理中心)</a>
+                        <img src="images/list_tabicon.png">
+                    </li>
+                    <li>
+                        <a href="#">个体心理咨询协议书</a>
+                        <img src="images/list_tabicon.png">
+                    </li>
+                    <li>
+                        <a href="#">瑞格智能身心反馈训练系统--训练中心的使用说明</a>
+                        <img src="images/list_tabicon.png">
+                    </li>
+                    <li>
+                        <a href="#">向校外转介学生辅导员联系书</a>
+                        <img src="images/list_tabicon.png">
+                    </li>
+                    <li>
+                        <a href="#">心理危机学生报表 </a>
+                        <img src="images/list_tabicon.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--尾部-->
+    <footer>
+        <div class="from-top">
+            <pre>河南大学计算机与信息工程学院心理健康教育工作站  地址：河南大学计算机与信息工程学院101</pre>
+        </div>
+        <div class="from-bot">
+            <pre>电话：0371-23883169  邮编：475000</pre>
+        </div>
+    </footer>
+    <!--侧边栏 返回顶部-->
+    <aside>
+        <div class="arrow">
+            <a href="#tar" class="arrow_top">
+               
+            </a>
+        </div>
+        <div class="arrow-bot">
+            <p><a href="#">任务列表</a></p>
+        </div>
+    </aside>
+    <script src="./js-jquire/animation.js"></script>
+    <script src="./js-jquire/107-2.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
