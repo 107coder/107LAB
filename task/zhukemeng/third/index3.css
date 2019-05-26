@@ -1,0 +1,303 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+a:link{
+	text-decoration: none;
+}
+a{
+	cursor: pointer;
+	color:#000000;
+}
+
+
+
+.one{
+	background-color: #39A4DB;
+	color: #FFFFFF;
+	font-size: 14px;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+
+
+.two{
+	
+}
+
+
+.three{
+	width:100%;
+	height: 50px;
+	background-color:#39A4DB;
+	position:relative;
+}
+.three ul li:hover{
+	background-color:#3C93ED;
+}
+.n1 li{
+	background-color:#39A4DB;
+}
+.n1 li a{
+	color: #FFFFFF;
+	font-size:16px;
+}
+.n1 > li{
+	float: left;
+	position: relative;
+}
+.n2{
+	position: absolute;
+	top:50px;
+	left:0px;
+	z-index: 9999;
+	display: none;
+	background-color:#39A4DB;
+	width:105px;
+}
+
+
+.four{
+	height:400px;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+.images{
+	width:400%;
+	height: 400px;
+    overflow: hidden;
+}
+.four ul{
+	position: relative;
+}
+.four ul li img{
+	float:left;
+}
+.four ol{
+	position:absolute;
+	bottom:0;
+	right:555px;
+	width:110px;
+	height:35px;
+}
+.four ol li{
+	float:left;
+	margin-top:12px;
+	cursor:pointer;
+	width:10px;
+	height:10px;
+	background-color:#39A4DB;
+	opacity:1;
+	border-radius:20px;
+	border:0.1px solid #FFFFFF;
+}
+.four ol li.current{
+	background-color:#39A4DB;
+	opacity:0.5;
+	border-radius:20px;
+	border:0.1px solid #FFFFFF;
+	cursor:pointer;
+}
+
+
+.five{
+	width:100%;
+	height:600px;
+	position: relative;
+}
+.top_left{
+    width: 410px;
+    height: 300px;
+    float: left;
+    margin:35px 20px 10px 90px;
+    position: relative;
+    overflow: hidden;
+}
+.mask{
+	width:80px;
+	height:80px;
+	background: #abcdef;
+	opacity:0.5;
+	position: absolute;
+	left:0;
+	top:0;
+	display: none;
+}
+.top_left ul{
+	width:820px;
+	height:300px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.top_left ul li{
+	float:left;
+	width:410px;
+	height: 300px;
+}
+.top_left ol{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.top_left ol li{
+	float:left;
+	width:16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border:2px solid #FFFFFF;
+	background-color: #CCCCCC;
+	color:#39A4DB;
+	cursor: pointer;
+}
+.top_left ol li.current2{
+	background-color: #39A4DB;
+	color: #FFFFFF;
+}
+.large{
+	width:300px;
+	height:300px;
+	border:1px solid #ccc;
+	position: absolute;
+	top:0;
+	left:420px;
+	overflow: hidden;
+}
+.large img{
+	width: 600px;
+	height: 450px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.top_right{
+    width: 650px;
+    height: 300px;
+    line-height: 33px;
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.top_right a{
+	color: #3D3847;
+}
+.top_right a:hover {
+	color: #39A4DB;
+}
+
+.bottom_left{
+	width:300px;
+	height:230px;
+	float:left;
+	margin:0 10px 30px 90px; 
+}
+.bottom_left a{
+	color: #3D3847;
+}
+.bottom_middle{
+	width:400px;
+	height:230px;
+	float:left;
+    margin:0 10px 30px 10px;
+}
+.slideTxtBox {
+	width: 400px;
+	height: 230px;
+	padding: 5px;
+	overflow: hidden;
+	text-align: left;
+	float: left;
+}
+.slideTxtBox .hd {
+	height: 45px;
+	line-height: 45px;
+	font-size: 1.2em;
+}
+.slideTxtBox .hd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+.slideTxtBox .hd ul li {
+	float: left;
+	width: 133px;
+	background: #FFFFFF;
+}
+.slideTxtBox .hd ul li a {
+	display: block;
+	padding: 0 15px;
+	color: #3D3847;
+}
+.slideTxtBox .bd ul li a{
+	color: #3D3847;
+}
+.slideTxtBox .bd ul li a:hover {
+	color: #39A4DB;
+}
+.slideTxtBox .hd ul li{
+	border-radius: 6px;
+}
+.slideTxtBox .hd ul li.on {
+	background-color:#39A4DB;
+}
+.slideTxtBox .hd ul li.on a{
+	color: #FFFFFF;
+}
+.slideTxtBox .bd {
+	padding: 0 5px;
+}
+.slideTxtBox .bd li{
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+}
+.bottom_right{
+	width:300px;
+	height:230px;
+	float:left;
+	margin:0 10px 30px 20px;
+}
+.bottom_right a{
+	color: #3D3847;
+}
+.bottom_right a:hover {
+	color: #39A4DB;
+}
+
+
+.six{
+	width:100%;
+	height:88px;
+}
+.p2{
+	height:40px;
+	font-size: 12px;
+	color: #565656;
+	line-height: 40px;
+}
+
+
+.wrap{
+	display: block;
+	bottom: 0px;
+	right: 15px;
+	width: 100px;
+	line-height: 60px;
+	position: fixed;
+	border: 2px solid #000000;
+	background-color: #FFFFFF;
+	text-align: center;
+	color: #000000;
+}
+*html{
+	overflow-x: auto;
+	overflow-y: auto;
+}
+*html .wrap{
+	position: absolute;
+}
