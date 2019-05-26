@@ -1,0 +1,55 @@
+@charset "utf-8";
+section{
+    width:950px;
+    height:550px;
+}
+body{
+    height:850px;
+}
+/*107-news下的当前位置*/
+.location{
+    height:28px;
+    padding-top:18px;
+    color:#000;
+    font-size:18px;
+    margin-bottom: 5px;
+}
+.location a{
+    color:#000;
+    font-size:18px;
+}
+.location a:hover{
+    color:#39a4db;
+}
+/*正文左上部分*/
+.content-top .box-pic{
+    width:285px;
+    padding-left:15px;
+}
+/*正文右上部分*/
+.news-bull{
+    height:420px;
+}
+.news-bull .news-con{
+    padding-top:10px;
+    border:0px;
+}
+.news-bull .news-con li{
+    margin:14px 0 14px 0;
+    padding-left:15px;
+}
+.change-page{
+    float:right;
+    padding-right:15px;
+}
+.change-page button{
+    color:#000;
+    font-size:16px;
+    cursor: pointer;
+}
+.change-page input{
+    width:50px;
+    height:20px;
+    text-indent: 5px;
+    font-size: 16px;
+}

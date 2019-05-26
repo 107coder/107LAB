@@ -1,0 +1,47 @@
+@charset "uft-8";
+.foot{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+	height:170px;
+	padding:40px 0 20px 215px;
+	background-color: rgba(55,61,65,1);
+}
+.foot .first{
+	height:20px;
+	padding-top:10px 0 10px 0;
+	margin-bottom: 10px;
+}
+.foot .first div{
+	float:left;
+	margin-right:25px;
+}
+.foot .first a{
+	font-size:17px;
+	color:#9e9ba0;
+	display: inline-block;
+}
+.foot .second{
+	margin:30px 0 5px 0;
+}
+.foot .second a{
+	display: inline-block;
+	margin-right:15px;
+	color:#73777a;
+	font-size: 12px;
+} 
+.foot .pay-for{
+	margin:0;
+}
+.foot a:hover{
+	color:#00cede;
+}
+.foot .all{
+	color:#73777a;
+	font-size: 12px;
+	margin-top:10px;
+}
+.foot .police img{
+	vertical-align: middle;
+}

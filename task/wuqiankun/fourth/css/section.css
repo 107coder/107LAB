@@ -1,0 +1,244 @@
+@charset "utf-8";
+section{
+    width:1075px;
+    margin:0 auto;
+    height:580px;
+    padding-left:15px;
+}
+/*上面部分*/
+.content-top{
+    width:100%;
+    height:300px;
+    padding:10px 0 10px 0;
+    border-top:5px solid #39a4db;
+}
+
+/*淡入淡出*/
+.content-top .box-pic{
+    position: relative;
+    float: left;
+    height:300px;
+    width:400px;
+}
+.content-top .box-pic .pic{
+    position: absolute;
+    height:300px;
+    width:400px;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.content-top .box-pic .pic a{
+    display: inline-block;
+}
+.content-top .box-pic .pic li{
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.content-top .box-pic .pic img{
+    width:400px;
+    height:300px;
+    transition: transform 1s;
+}
+.content-top .box-pic .pic:hover img{
+    transform: scale(2);
+}
+.content-top .box-pic .small-ico{
+    position: absolute;
+    z-index: 1;
+    width:44px;
+    height:22px;
+    bottom:20px;
+    right:25px;
+}
+.box-pic .small-ico span{
+    display:block;
+    float:left;
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    border:1px solid #fff;
+    background-color: #ccc;
+    font-size:14px;
+    color:#39a4db;
+    cursor: pointer;
+}
+.box-pic .small-ico .spe-color{
+    background-color: #39a4db;
+    color:#fff;
+}
+
+/*新闻部分*/
+.news-bull{
+    float:left;
+    margin-left:20px;
+    width:630px;
+    height:300px;
+}
+.news-bull h6 a{
+    display: inline-block;
+    height:48px;
+    line-height: 48px;
+    color:#000;
+    font-size:18px;
+}
+.news-bull .news-con{
+    width:630px;
+    padding-top:10px;
+    border-top:2px solid #39a4db;
+}
+.news-bull .news-con li{
+    position: relative;
+    margin:7px 0 7px 0;
+    padding-left:15px;
+}
+.news-con li a{
+    display: inline-block;
+    color:#000;
+    font-size:17px;
+    vertical-align: middle;
+}
+.news-con li > img{
+    position: absolute;
+    top:4px;
+    left:-1px;
+    width:15px;
+    vertical-align: middle;
+}
+.news-con li:first-child a{
+    position: relative;
+    color:rgb(202, 108, 20);
+}
+.news-con li a img {
+    opacity: 0;
+    width:0;
+    height:0;
+}
+.news-con li:first-child a img{
+    position: absolute;
+    top:-1px;
+    right:-60px;
+    width:26px;
+    height:10px;
+    opacity: 1;
+}
+
+.news-bull a:hover{
+    color:#39a4db;
+}
+
+/*下面第一部分*/
+.content-bottom .bot-first{
+    float: left;
+    width:280px;
+    height:210px;
+}
+.content-bottom .bot-first h6 a{
+    display: inline-block;
+    height:48px;
+    line-height: 48px;
+    color:#000;
+    font-size:18px;
+}
+.bot-first h6 a:hover{
+    color:#39a4db;
+}
+.content-bottom .bot-first p{
+    white-space: pre-wrap;
+    width:280px;
+    padding-top:10px;
+    border-top:2px solid #39a4db;
+    color:#000;
+    font-size:16px;
+}
+.content-bottom .bot-first p a{
+    color:#39a4db;
+}
+
+/*下面第二部分*/
+.bot-two{
+    float: left;
+    width:450px;
+    margin:0 22px 0 22px;
+}
+.bot-two .title{
+    width:450px;
+    height:48px;
+    border-bottom:2px solid #39a4db;
+}
+.bot-two .title ul li{
+    float:left;
+    width:98px;
+    height:35px;
+    padding-top:13px;
+    padding-left:22px;
+    border-radius: 5px;
+}
+.bot-two .title li a{
+    color:#000;
+    font-size:18px;
+}
+.bot-two .title ul .color-spe{
+    background-color: #39a4db;
+}
+.bot-two .title .color-spe a:hover{
+    color:#fff;
+}
+.bot-two .tit-con ul{
+    padding-top:5px;
+}
+.bot-two .tit-con ul + ul{
+    display:none;
+}
+.bot-two .tit-con ul li{
+    position: relative;
+    padding-left:25px;
+    margin:8px 0 8px 0;
+}
+.bot-two .tit-con li a{
+    display: inline-block;
+    color:#000;
+    font-size:17px;
+    vertical-align: middle;
+}
+.bot-two .tit-con li a:hover{
+    color:#39a4db;
+}
+.bot-two .tit-con li img{
+    position: absolute;
+    top:0px;
+    left:2px;
+    vertical-align: middle;
+}
+
+/*下面第三部分*/
+.bot-three{
+    margin-left:0px;
+    width:280px;
+    height:210px;
+}
+.bot-three .news-con{
+    width:280px;
+    padding-top:10px;
+    border-top:2px solid #39a4db;
+}
+.bot-three .news-con li a{
+    color:#000;
+}
+.bot-three .news-con li a:hover{
+    color:#39a4db;
+}
+.bot-three .news-con li a{
+    width:260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.bot-three .news-con li > img{
+    top:-3px;
+    left:-4px;
+    width:20px;
+}

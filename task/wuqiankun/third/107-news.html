@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="关键字">
+<meta name="Description" content="描述">
+    <title>107工作室-武乾坤</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/107-news.css">
+    <script src="./js-jquire/jquery-3.3.1.min.js"></script>
+    <script src="./js-jquire/107max.js"></script>
+    <style>
+    </style>
+    <?php
+    define("HOST","localhost");
+    define("USER","root");
+    define("PASSWORD","");
+    define("DBNAME","newsdb");
+    ?>
+</head>
+<body>
+    
+    <!--主页头部-->
+    <header>
+        <!--锚点-->
+        <p id="tar"></p>
+        <!--导航栏-->
+        <div class="nav-top">
+            <div class="nav-bt">
+                <div class="home_page">
+                    <a href="">设为首页</a>
+                </div>
+                <div class="mid-line">
+                    <a href="#">|</a>
+                </div>
+                <div class="collection">
+                    <a href="">加入收藏</a>
+                </div>
+            </div>
+        </div>
+        <!--logo图片-->
+        <div id="logo">
+            <a href="#">
+                <img src="images/ICON.png">
+            </a>
+        </div>
+        <!--下拉菜单-->
+        <div class="nav-list">
+            <div class="menu">
+                <ol>
+                    <li class="nav-menu current spe-nav">
+                        <a href="./107-3.html">首页</a>
+
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">关于我们</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="./107-con.html">中心简介</a>
+                            </li>
+                            <li>
+                                <a href="#">服务内容</a>
+                            </li>
+                            <li>
+                                <a href="#">师资队伍</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">新闻公告</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">中心动态</a>
+                            </li>
+                            <li>
+                                <a href="#">学院风采</a>
+                            </li>
+                            <li>
+                                <a href="#">朋辈成长</a>
+                            </li>
+                            <li>
+                                <a href="#">教师园地</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理百科</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">心理常识</a>
+                            </li>
+                            <li>
+                                <a href="#">最新发现</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理保健</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">性感美文</a>
+                            </li>
+                            <li>
+                                <a href="#">开心一刻</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理咨询</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">咨询常识</a>
+                            </li>
+                            <li>
+                                <a href="#">药品指南</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#">心理测评</a>
+                        <ul class="nav_menu_ul">
+                            <li>
+                                <a href="#">心理普查</a>
+                            </li>
+                            <li>
+                                <a href="#">趣味检测</a>
+                            </li>
+                            <li>
+                                <a href="#">专业问卷</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu"><a href="#">专题活动</a></li>
+                    <li class="nav-menu"><a href="#">下载中心</a></li>
+                    <li class="nav-menu"> <a href="#">我要留言</a></li>
+                </ol> 
+            </div>
+        </div>
+        
+    </header>
+    <!--中心内容-->
+    <section>
+        <!--当前位置-->
+        <p class="location">当前位置:
+            <a href="./107-3.html">首页</a>
+            >> <a href="#">新闻公告</a>
+        </p>
+        <!--中心内容的上面部分-->
+        <div class="content-top">
+            <!--淡入淡出-->
+            <div class="box-pic">
+                <img src="./images/newslist.jpg">
+            </div>
+            <!--新闻部分-->
+            <div class="news-bull">
+                <ul class="news-con">
+                        <?php
+                       
+                        $link = @mysqli_connect(HOST,USER,PASSWORD) or die("数据库连接失败！");
+                        mysqli_select_db($link,"newsdb");
+                        mysqli_set_charset($link, "utf8");
+                        $sql = "select news_title from news order by top desc,puttime desc";
+                        $result = mysqli_query($link,$sql);
+                       while($row = mysqli_fetch_array($result)){
+                    
+                        echo "<li>
+                            <a href=\"107-news-con.html\">{$row['news_title']}
+                                <img width=\"26px\" src=\"images/hot.gif\">
+                            </a>
+                            <img src=\"images/list_icon.png\">
+                            </li>";
+                            
+                       }
+                        
+                        ?>
+                </ul>
+            </div>
+            <div class="change-page">
+                <button type="button">上一页</button>
+                <button type="button">下一页</button>
+                <input type="text" name="page">
+                <button type="button">跳转</button>
+            </div>
+        </div>
+    </section>
+    <!--尾部-->
+    <footer>
+        <div class="from-top">
+            <pre>河南大学计算机与信息工程学院心理健康教育工作站  地址：河南大学计算机与信息工程学院101</pre>
+        </div>
+        <div class="from-bot">
+            <pre>电话：0371-23883169  邮编：475000</pre>
+        </div>
+    </footer>
+    
+    <script src="./js-jquire/animation.js"></script>
+    <!--<script src="./js-jquire/107-2.js"></script>-->
+    <script>
+        
+    </script>
+</body>
+</html>
