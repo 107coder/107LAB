@@ -18,6 +18,7 @@ local.properties
 .DS_Store
 Thumbs.db
 dbconfig.php
+*.project
 *.sql
 *.bak
 *.tem
