@@ -1,0 +1,151 @@
+.head1 {
+	position: absolute;
+	top: 0;
+	border: solid blue 0px;
+	border-bottom: 20px;
+	width: 100%;
+	background-color: #282828;
+	border-bottom: solid 3px grey;
+}
+
+.head2 {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	line-height: 50px;
+	text-align: center;
+	width: 400px;
+	height: 100%;
+	font-size: 20px;
+	color: white;
+	border: 2px;
+}
+
+.head2 img {
+	position: absolute;
+	top: 10px;
+	right: 340px;
+}
+
+.body {
+	position: absolute;
+	width: 100%;
+	top: 53px;
+	line-height: 1.5em;
+}
+
+.body img {
+	width: 100%;
+}
+
+.bottom {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	bottom: -30%;
+	background-color: #393d40;
+	padding-left: 100px;
+	padding-top: 50px;
+	font-family: "微软雅黑";
+	line-height: 1.5em;
+	color: gray;
+}
+
+li {
+	float: left;
+	margin-right: 10px;
+	list-style: none;
+}
+
+.bottom a {
+	float: left;
+	margin-right: 30px;
+	list-style: none;
+	font-size: 20px;
+	color: ;
+}
+
+.body1 {
+	position: absolute;
+	top: 110px;
+	right: 200px;
+	width: 350px;
+	height: 350px;
+	background-color: ghostwhite;
+}
+
+.body1 a {
+	text-decoration: none;
+	color: grey;
+	font-family: "微软雅黑";
+	font-size: 10px;
+}
+
+.submit {
+	display: block;
+	color: white;
+	background-color: deepskyblue;
+	width: 300px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 5px
+}
+
+.submit2 {
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	position: absolute;
+	top: 0px;
+	border: solid 1px #474A51;
+	width: 200px;
+	height: 48px;
+	left: 700px;
+	background-color: #474A51;
+	text-align: left;
+	padding-top: 5px;
+}
+
+.body1 p {
+	padding-left: 30px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.word {
+	position: relative;
+	margin-top: 15px;
+	width: 300px;
+	height: 40px;
+	left: 20px;
+}
+
+.find {
+	position: absolute;
+	background-color: #474A51;
+	width: 50px;
+	height: 48px;
+	left: 900px;
+	top: 0px;
+}
+
+.fix {
+	position: fixed;
+	right: 0px;
+	top: 300px;
+	width: 40px;
+	height: 180px;
+	background-color: #00C1DE;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding-left: 10px;
+	font-family: "微软雅黑";
+	letter-spacing: 10px;
+}
+
+.fix img {
+	position: relative;
+	right: 10px;
+}
