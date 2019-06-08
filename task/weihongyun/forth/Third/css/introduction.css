@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+#head
+{
+	position: relative;
+	height: 35px;
+	width: auto;
+	background-color: #39A4DB;
+	line-height:30px;
+	text-align: center;
+}
+#head span{
+	color: white;
+	font-size: middle;
+	cursor: pointer;
+	}
+.navTitle{
+	position: relative;
+	left: 500px;
+}
+/*整个计算机院图片*/
+#title{
+	height: 80px;
+	text-align: center;
+}
+#title img{
+	height: 80px;
+	width: auto;	
+}
+/*下拉菜单*/
+#navigation{
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: #39A4DB;
+	text-align: center;
+	z-index: 20;
+}
+.nav_content{
+	width: 1500px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav_content ul li{
+	color: #fff;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: 500;
+	width: 140px;
+	height: 60px;
+	cursor: pointer;
+	/*overflow: hidden;*/
+	/*margin: 0 5px;
+	padding: 0 5px;*/
+	list-style: none;
+	float: left;
+}
+.nav_content ul li:hover{
+	background-color: #39A4DB;
+}
+.nav_list:hover .nav_list_child{
+	display: block;
+}
+.nav_content a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav_list ol{
+	display: none;
+	box-shadow: 3px 3px 3px #000000;
+	z-index: 100;
+}
+.nav_list ol li{
+	float: none;
+	width: 140px;
+	font-size: 15px;
+	padding: 0px;
+	background-color: #39A4DB;
+	border-bottom: 1px solid #000;
+}
+.nav_list ol li a{
+	color: #fff;
+}
+.nav_list ol li:nth-child(1){
+	padding: 0;
+}
+
+.content{
+	position: relative;
+	width: 800px;
+	height:450px;
+	border-top: solid 6px #39A4DB;
+	margin:80px 50%;
+	left: -400px;
+	padding: 20px;
+	font-size: 18px;
+	line-height: 25px;
+}
+.title{
+	position: relative;
+	font-size:25px;
+	text-align: center;
+}
+.bodycontent{
+	position: relative;
+	margin: 10px 5px;
+	padding: 10px;
+}
+#end{
+	position: relative;
+	height: 70px;
+	width: auto;
+	border-top: solid 3px #808080;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+
+}
+#end span{
+	color: gray;
+	font-size: small;
+}
