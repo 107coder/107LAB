@@ -1,0 +1,403 @@
+*{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.div_float{
+	height: 100px;
+	width: 200px;
+	position: fixed;
+	z-index: 1000;
+}
+#head
+{
+	position: relative;
+	height: 35px;
+	width: auto;
+	background-color: #39A4DB;
+	line-height:30px;
+	text-align: center;
+}
+#head span{
+	color: white;
+	font-size: middle;
+	cursor: pointer;
+	}
+.navTitle{
+	position: relative;
+	left: 500px;
+}
+/*整个计算机院图片*/
+#title{
+	height: 80px;
+	text-align: center;
+}
+#title img{
+	height: 80px;
+	width: auto;	
+}
+
+/*下拉菜单*/
+#navigation{
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: #39A4DB;
+	text-align: center;
+	z-index: 20;
+}
+.nav_content{
+	width: 1500px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav_content ul li{
+	color: #fff;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: 500;
+	width: 140px;
+	height: 60px;
+	cursor: pointer;
+	/*overflow: hidden;*/
+	/*margin: 0 5px;
+	padding: 0 5px;*/
+	list-style: none;
+	float: left;
+}
+.nav_content ul li:hover{
+	background-color: #39A4DB;
+}
+.nav_list:hover .nav_list_child{
+	display: block;
+}
+.nav_content a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav_list ol{
+	display: none;
+	box-shadow: 3px 3px 3px #000000;
+	z-index: 100;
+}
+.nav_list ol li{
+	float: none;
+	width: 140px;
+	font-size: 15px;
+	padding: 0px;
+	background-color: #39A4DB;
+	border-bottom: 1px solid #000;
+}
+.nav_list ol li a{
+	color: #fff;
+}
+.nav_list ol li:nth-child(1){
+	padding: 0;
+}
+
+/*轮播图*/
+#slide{
+	position: relative;
+	height:350px;
+	width:100%;
+	border: solid 5px black;
+	overflow: hidden;/*溢出的隐藏*/
+	border: none;
+	display: block;
+	margin-top: 35px;
+}
+.slide_img{
+	
+	width: 400%;
+	height: 350px;
+	overflow: hidden;
+}
+.slide_img ul{
+	position: relative;	
+	height: 350px;
+}
+.slide_img img{
+    width: 25%;
+    height: 350px;
+}
+.slide_img ul li img{
+	float: left;	
+}
+.slide_img ul li {
+	height: 0;
+}
+
+.slide_point {
+	position: absolute;
+	float: left;
+	bottom:20px ;
+	left: 50%;
+	z-index: 5;
+	list-style: none;
+}
+.slide_point ol{
+	list-style: none;
+}
+.slide_point ol li{
+	float: left;
+	cursor: pointer;
+	width: 11px;
+	height:19px;
+	margin: 5px;
+}
+.slide_point ol li img{
+	height: 11px;
+	width: 11px;
+}
+.point_currrent{
+	background-color: #33CDE5 !important;/*最高优先级*/
+}
+#text1{
+	position: relative;
+	left: 100px;
+	height: 400px;
+	width: 1200px;
+	border-top: solid 5px #39A4DB;
+	margin: 5px 60px;
+	padding: 10px;
+}
+.picture{
+	position: relative;
+	height: 400px;
+	width: 450px;
+	border: dashed 3px black;
+	float: left;
+	overflow: hidden;
+	border: none;
+}
+.picture ul{
+	float: left;
+}
+.picture ul li{
+	display: inline;
+	list-style: none;
+}
+.picture ol{
+	position: absolute;
+	bottom:10px;
+	left: 350px;
+	list-style: none;
+}
+.picture ol li{
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border: #fc0;
+	background: #39A4DB;
+	color: #fff;
+	margin-left: 5px;
+	cursor: pointer;
+
+}
+/*新闻公告的文字部分*/
+
+.ad{
+	position: relative;
+	float: left;
+	height: 400px;
+	width: 680px;
+	border: dashed 3px #000000;
+	line-height: 28px;
+	padding: 10px;
+	border: none;
+}
+.ad ul{
+	line-height: 30px;
+}
+.ad ul li{
+	padding: 2px;
+	list-style: none;
+}
+.ad ul li img{
+	height:20px;
+	width: 20px;
+}
+.ad a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #000000;
+	line-height: 30px;
+	
+}
+.new{
+	border-bottom: solid 2px #39A4DB;
+	padding: 5px;
+	cursor: pointer;
+}
+.new span{
+	font-weight: normal;
+	font-size: 25px;
+}
+#text2{
+	position: relative;
+	height: 250px;
+	width: 1200px;
+	left: 100px;
+	border: solid 3px yellow;
+	margin: 5px 60px;
+	padding: 10px;
+	border: none;
+}
+.left{
+	position: relative;
+	height: 250px;
+	border: dashed 3px black;
+	float: left;
+	width: 320px;
+	font-size: 18px;
+	color: #000000;
+	margin-right:10px;
+	border: none;	
+}
+.left p{
+	font-size: 20px;
+}
+.content1{
+	border-top: #39A4DB 2px solid;
+	width:250px ;
+	height: 190px;
+	margin: 2px 20px;
+	padding: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;/*显示省略号*/
+	display: -webkit-box;
+	-webkit-line-clamp: 8;
+	-webkit-box-orient: vertical;
+	font-size: 18px;
+	
+}
+.left span a{
+	color: #39A4DB;
+	text-decoration: none;
+}
+.center{
+	position: relative;
+	height: 250px;
+	border: dashed 3px black;
+	width: 430px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+	display: inline;
+	border: none;
+}
+.center li{
+	list-style: none;
+}
+.center img{
+	height: 20px;
+	width: 20px;
+}
+.center a{
+	text-decoration: none;
+	color: #000000;
+}
+.hide{
+	display: none;
+}
+.tabTitle{
+	height: 30px;
+	width:400px;
+	left: 5px;
+}
+.tabTitle ul{
+	overflow: hidden;
+	height:30px;
+}
+.tabTitle ul li{
+	float: left;
+	position: relative;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 8px;/*设置圆角*/
+	padding: 0px 10px;
+	margin-right:8px ;
+	display: inline;	
+}
+.current{
+	background: #39A4DB;
+	color: #FFFFFF;
+}
+.tabContent{
+	top: 2px;
+	position: relative;
+	height: 200px;
+	width: 430px;
+	border-top: #39A4DB solid 2px;
+	margin: 0px 10px;
+	padding: 5px;
+	float: left;
+	display: inline;
+	font-size: 18px;
+	line-height: 30px;
+	left: -10px;
+}
+
+.right{
+	position: relative;
+	height: 250px;
+	border: dashed 3px black;
+	width: 380px;
+	float: left;
+	border: none;
+}
+.right p{
+	font-size: 20px;
+}
+.content3{
+	border-top: #39A4DB 2px solid;
+	height: 210px;
+	width: 300px;
+	font-size: 18px ;
+	margin: 5px 10px;
+	padding: 5px;
+}
+.content3 a{
+	text-decoration: none;
+	color: #000000;
+}
+.content3 ul li{
+	list-style: none;
+}
+.content3 img{
+	height: 20px;
+	width: 20px;
+}
+#end{
+	position: relative;
+	height: 70px;
+	width: auto;
+	border: solid 3px pink;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+	border: none;
+}
+#end span{
+	color: gray;
+	font-size: small;
+}
+#return{
+	height: 20px;
+	width: 20px;
+	border: solid 2px #000000;
+	background-color: #33CDE5;			
+	position:fixed;
+	text-align: center;
+	float: left;
+	left: 800px;
+}
+#return p{
+	color: #000000;
+	font-size: 15px;
+}
